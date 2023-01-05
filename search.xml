@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>HTML入门笔记</title>
+    <url>/2022/12/31/HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1> 一、HTML介绍： </h1>
+Hyper Text Markup Language（超文本标记语言），他是属于一种网页的标准语言，但是不算是一种编程语言，而是一种Markup Language，即标记语言。它是属于前端开发的三大核心技术之一，另外两项是CSS和JavaScript。
+
+<p><font size="5">HTML、CSS、JavaScript三者有何区别？？</font></p>
+<p>HTML用于构造网页的结构，例如：网页中的文字、表格、按钮、链接等等。而CSS用于修饰网页中的元素，就是把上述这些元素进行调整，例如：文字的大小，颜色，背景的样式等等。JavaScript用于实现网页的交互，比如在点击某个地方后页面会发生跳转，或是网页中需要用到的函数。</p>
+<h2>通俗的来说将，如果把写网页比作成盖房子，HTML相当于房子的地基，墙，屋顶，用于构造房子；CSS相当于装修你的房子，用作房子的修饰；JavaScript相当于屋内的各种家具，用于实现这个房子的功能。</h2>
+
+<p>HTML最初于1989年由CERN的Tim Berners-Lee发明。HTML基于更古老一些的语言SGML定义，并简化了其中的语言元素。</p>
+<div align="center">
+    <table>
+        <thead>
+            <tr>
+                <th style="width:150px;">版本号</th>
+                <th style="width:350px;">说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML 1.0</td>
+                <td>在1993年6月作为互联网工程工作小组(IETF)工作草案发布。</td>
+            </tr>
+            <tr>
+                <td>HTML 2.0</td>
+                <td>1995年1 1月作为RFC 1866发布，于2000年6月发布之后被宣布已经过时。</td>
+            </tr>
+            <tr>
+                <td>HTML 3.2</td>
+                <td>1997年1月14日，W3C推荐标准。</td>
+            </tr>
+            <tr>
+                <td>HTML 4.0</td>
+                <td>1997年12月18日，W3C推荐标准。</td>
+            </tr>
+            <tr>
+                <td>HTML 4.01</td>
+                <td>（微小改进）：1999年12月24日，W3C推荐标准。</td>
+            </tr>
+            <tr>
+                <td>HTML 5</td>
+                <td>HTML5是公认的下一代Web语言，极大地提升了Web在富媒体、富内容和富应用等方面的能力，被喻为终将改变移动互联网的重要推手。Internet Explorer 8及以前的版本不支持。</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h1 id="二、HTML基本结构："><a href="#二、HTML基本结构：" class="headerlink" title="二、HTML基本结构："></a>二、HTML基本结构：</h1><p>在学习基本标签之前，我们先要认识一下html文件的基本结构。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;   </span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>这就是html最核心的结构，不管什么样的网页都是有着几部分构成。这其中的&lt;&gt;我们叫做标签，或者叫做元素。当然我们会发现它们基本上是成对出现的，例如&lt;head&gt;表示head这部分的开始，而&lt;&#x2F;head&gt;表示结束，至于每个标签的含义，下面我们来学习。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br></pre></td></tr></table></figure>
+<p>这是文档声明，这里表示一个html页面，至于含义，可以看作 DOC TYPE——document type，即文件类型。这是每一个网页必要的一部分，必须要写的。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>这表示页面的开始和结束，也就是要在这一对标签内书写你网页的所有内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line"></span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+<p>这一对标签表示网页的“头部”，像是添加一个页面标题、定时刷新或是加入外部文件，需要在这一对标签里书写，至于里面的详细内容后面会介绍到。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>这一对标签表示网页的“身体”，用于网页内容的编写，例如在网页中你所看到的文字，表格或是各种按钮，都是在这一对标签之中。</p>
+<h1 id="三、HTML基本标签："><a href="#三、HTML基本标签：" class="headerlink" title="三、HTML基本标签："></a>三、HTML基本标签：</h1><p>有了对html整体结构的一个认识，下面来介绍每对标签中的详细内容。</p>
+<h2 id="1、head标签："><a href="#1、head标签：" class="headerlink" title="1、head标签："></a>1、head标签：</h2><p>在这一对标签内的子标签都是比较特殊的，内容相对来说比较简单，也比较枯燥，知识点也比较少，所以放在了前面，至于这一块的内容，我们只需要了解这些子标签，以及他们的作用就好了。如果实在记不住也没有关系，忘记的时候再去查询就好了，这一块的知识本就不是一次性就都能记住的，反复的查看，记忆会更深，学的也会更扎实。</p>
+<p>head标签有如下几个子标签：</p>
+<ul>
+<li>title标签</li>
+<li>meta标签</li>
+<li>link标签</li>
+<li>style标签</li>
+<li>script标签</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;title&gt;标题&lt;/title&gt;</span><br></pre></td></tr></table></figure>
+<p>这对标签唯一的作用就是定义网页的标题。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;title&gt;网页标题&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;      </span><br><span class="line">		&lt;p&gt;文本内容&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/1-1.png" alt="avatar"></p>
+<p>如上图所示，title标签所展示的标题是整个界面的标题，而&lt;body&gt;标签中&lt;p&gt; 标签中的内容时显示在页面上的。<br>这个&lt;p&gt;大家可能有些陌生，它表示的是一种文本，后续会讲到。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;meta 属性名=“名称” content=”内容” /&gt;</span><br></pre></td></tr></table></figure>
+<p>这个标签是用来定义网页的一些特殊信息，例如页面关键字、页面描述等。但是它并不能显示出来，这是给搜索引擎看的。</p>
+<p>在这里小伙伴可能也注意到了，他不同与之前所讲述的标签，他没有用作标志结束的标签，事实上像上面这种有两个&lt;&gt;的标签，被叫作双标签，例如之前举的例子：&lt;head&gt;开始，而&lt;&#x2F;head&gt;表示结束，而这个叫做单标签，其中需要注意的是&gt;前面需要加上一个“&#x2F;”。</p>
+<p>并且这里又引入了一个新的概念——属性。他是一对标签里的内容，通常为属性名&#x3D;“内容”，像是这里的content也可被叫做属性，用来表示内容。而meta标签前面的属性常用的有两种：</p>
+<ul>
+<li>name属性</li>
+<li>http-equiv属性</li>
+</ul>
+<h3 id="（1）name属性："><a href="#（1）name属性：" class="headerlink" title="（1）name属性："></a>（1）name属性：</h3><div align="center">
+    <table border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+        <thead>
+            <tr>
+                <th style="width:200px;">name属性值取值</th>
+                <th style="width:300px;">说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width:200px;">keywords</td>
+                <td style="width:300px;">网页的关键字</td>
+            </tr>
+            <tr>
+                <td style="width:200px;">description</td>
+                <td style="width:300px;">网页的描述</td>
+            </tr>
+            <tr>
+                <td style="width:200px;">author</td>
+                <td style="width:300px;">作者</td>
+            </tr>
+            <tr>
+                <td style="width:200px;">copyright</td>
+                <td style="width:300px;">版权信息</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;!--关键字：可以有多个关键字--&gt;</span><br><span class="line">        &lt;meta  name=&quot;keywords&quot; content=&quot;前端开发,零基础入门&quot; /&gt;</span><br><span class="line">        &lt;!--网页描述：对于网页内容的描述--&gt;</span><br><span class="line">        &lt;meta  name=&quot;description&quot; content=&quot;HTML零基础入门一——基本标签&quot; /&gt;</span><br><span class="line">        &lt;!--作者信息--&gt;</span><br><span class="line">        &lt;meta  name=&quot;author&quot; content=&quot;幼儿班的小白&quot; /&gt;</span><br><span class="line">        &lt;!--版权声明--&gt;</span><br><span class="line">        &lt;meta  name=&quot;copyright&quot; content=&quot;原创不易，请勿转载&quot; /&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="（2）http-equiv属性："><a href="#（2）http-equiv属性：" class="headerlink" title="（2）http-equiv属性："></a>（2）http-equiv属性：</h3><div align="center">
+    <table border="1" cellpadding="1" cellspacing="1" style="width:511px;">
+        <thead>
+            <tr>
+                <th style="width:233px;">http-equiv属性取值</th>
+                <th style="width:274px;">说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width:233px;">Content-Type</td>
+                <td style="width:274px;">定义网页</td>
+            </tr>
+            <tr>
+                <td style="width:233px;">refresh</td>
+                <td style="width:274px;">定时刷新界面并跳转</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">    &lt;html &gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;!--页面所使用的编码是utf-8--&gt;</span><br><span class="line">        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>这句代码也可以简写为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;meta charset=&quot;utf-8&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p>在实际开发中，为了确保不出现乱码，我们必须要在每一个页面中加上。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">    &lt;html &gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta  http-equiv=&quot;refresh&quot; content=&quot;6;url=http://www.baidu.com&quot;/&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>这一行代码表述页面在6秒后跳转到百度界面，通常我们见到网页上的小广告，都是这个原理。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;文件路径&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>这个标签用于CSS外部文件的引用，其中rel是“relative相对的”的缩写，它的取值是固定的，即stylesheet，表示引入的是一个样式表文件，href表示的是文件的路径。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<p>用来写CSS的内容。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;scrip&gt;</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>用来写JavaScript的内容。</p>
+<h2 id="2、body标签："><a href="#2、body标签：" class="headerlink" title="2、body标签："></a>2、body标签：</h2><p>body标签中有大量的子标签，为了方便记忆，所以就不再一一列举有哪些标签了，而是分成了六个部分进行展示。分别为：</p>
+<ul>
+<li>文本</li>
+<li>图像</li>
+<li>链接</li>
+<li>列表</li>
+<li>表格</li>
+<li>表单</li>
+</ul>
+<h3 id="（1）文本"><a href="#（1）文本" class="headerlink" title="（1）文本"></a>（1）文本</h3><p>这个词汇大家一定不陌生，文本就是文字，但是在用HTML写网页是，并不是所有的文字都是一种格式，这里说的文本，实质网页中成段出现的文字，在这里为大家介绍两种格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h1&gt;标题&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
+<p>在HTML中共有六种大小不同的格式分别为h1到h6，并且大小则h1到h6逐渐变小。这里的标题不同于head标签中的&lt;title&gt;标题，上面讲到过&lt;title&gt;标签指的是网页的标题，而这里的是指网页内容中的标题。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;title&gt;网页标题&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">        &lt;h1&gt;一级标题&lt;/h1&gt;</span><br><span class="line">		&lt;h2&gt;二级标题&lt;/h2&gt;</span><br><span class="line">		&lt;h3&gt;三级标题&lt;/h3&gt;</span><br><span class="line">		&lt;h4&gt;四级标题&lt;/h4&gt;</span><br><span class="line">		&lt;h5&gt;五级标题&lt;/h5&gt;</span><br><span class="line">		&lt;h6&gt;六级标题&lt;/h6&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/1-2.png" alt="avatar"></p>
+<p> 这里也可以明显的看到这几级标题大小有着明显的不同，在网页中按照他们的大小代表他们的重要性，通常一个网页中一级标题这能有一个，而后面的h2到h6可以有多个。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;段落&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这一部分上面也接触到过，叫段落标签，比较常用。通常我们浏览网页中，那种大段的文字都是用的这个标签。在这里需要注意的是&lt;p&gt;标签中的内容是一个段落，在网页呈现的效果是可以自动换行的，因为每一个&lt;p&gt;标签就是一个段落，并且每个段落之间还会有一些空隙。</p>
+<p>除此之外还有一些对文本进行处理的文本标签：</p>
+<div align="center">
+    <table border="1" cellpadding="1" cellspacing="1" style="width:618px;">
+        <thead>
+            <tr>
+                <th style="width:253px;">文本标签</th>
+                <th style="width:365px;">说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width:253px;">strong、b</td>
+                <td style="width:365px;">粗体</td>
+            </tr><tr>
+                <td style="width:253px;">em、cite、i</td>
+                <td style="width:365px;">斜体</td>
+            </tr>
+            <tr>
+                <td style="width:253px;">sup</td>
+                <td style="width:365px;">上标</td>
+            </tr>
+            <tr>
+                <td style="width:253px;">sub</td>
+                <td style="width:365px;">下标</td>
+            </tr>
+            <tr>
+                <td style="width:253px;">s</td>
+                <td style="width:365px;">中划线</td>
+            </tr>
+            <tr>
+                <td style="width:253px;">u</td>
+                <td style="width:365px;">下划线</td>
+            </tr>
+            <tr>
+                <td style="width:253px;">big</td>
+                <td style="width:365px;">大字</td>
+            </tr>
+            <tr>
+                <td style="width:253px;">small</td>
+                <td style="width:365px;">小字</td>
+            </tr>
+        </tbody>
+    </table>	
+</div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;	</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">        &lt;p&gt;好好学习，天天向上。&lt;/p&gt;</span><br><span class="line">		&lt;strong&gt;好好学习，天天向上。&lt;/strong&gt;&lt;br/&gt;</span><br><span class="line">		&lt;em&gt;好好学习，天天向上。&lt;/em&gt;&lt;br/&gt;</span><br><span class="line">		&lt;big&gt;好好学习，天天向上。&lt;/big&gt;&lt;br/&gt;</span><br><span class="line">		&lt;small&gt;好好学习，天天向上。&lt;/small&gt;&lt;br/&gt;</span><br><span class="line">		&lt;u&gt;好好学习，天天向上。&lt;/u&gt;&lt;br/&gt;</span><br><span class="line">		&lt;s&gt;原价10.00&lt;/s&gt;&lt;br/&gt;</span><br><span class="line">		&lt;p&gt;(a+b)&lt;sup&gt;2&lt;/sup&gt;=a&lt;sup&gt;2&lt;/sup&gt;+b&lt;sup&gt;2&lt;/sup&gt;+2ab&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;SO&lt;sub&gt;4&lt;/sub&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/1-3.png" alt="avatar"></p>
+<p>效果如上图所示，通常比较常用的也就是加粗和倾斜；中划线通常用于价格降价宣传；至于大字号、小字号和下划线可以利用CSS来调整；而上标和下标通常用于公式，比如幂，角标，或是化学式等等。</p>
+<p>除此之外需要注意的是除了&lt;p&gt;标签，其他的不会自己换行，需要加上换行标签&lt;br&#x2F;&gt;，后面会讲到。这是因为&lt;p&gt;标签属于块元素，块元素的意思是在浏览器显示状态下将占据整一行，并且排斥其他元素与其位于同一行，但是块元素的内部允许放其他的块元素或是行内元素，比如之前讲到的h1-h6就属于块元素；至于行内元素与块元素正好相反，行内元素可以与其他行内元素位于同一行的。此外，行内元素内部只可以容纳其他行内元素，不可以容纳块元素，比如这里讲的文本标签都是属于行内元素。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">&lt;hr/&gt;</span><br></pre></td></tr></table></figure>
+<p>有些时候需要我们手动去换行，比如使用那些行内元素的时候，就要用到换行标签&lt;br&#x2F;&gt;，它是“break”的缩写，这也是一个单标签，可以直接写到&lt;p&gt;标签中。需要注意的是这里的斜杠“&#x2F;”是写在后面的。</p>
+<p>而&lt;hr&#x2F;&gt;标签的作用是添加一条水平线，他是水平线“horizon的缩写”。</p>
+<p>&lt;br&#x2F;&gt;属于行内元素，&lt;hr&#x2F;&gt;属于块元素。后面在遇到这种易混淆的的概念，会在为大家解释。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;	</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;h2&gt;关雎&lt;/h2&gt;</span><br><span class="line">        &lt;p&gt;关关雎鸠，在河之洲。&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;窈窕淑女，君子好逑。&lt;/p&gt;</span><br><span class="line">        &lt;hr/&gt;</span><br><span class="line">		&lt;p&gt;参差荇菜，左右流之。&lt;br/&gt;窈窕淑女，寤寐求之。&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/1-4.png" alt="avatar"></p>
+<p>由上图可以看出如果在&lt;p&gt;标签中的文本进行换行，那么会换行但是中间不会有空隙。所以在写网页时可以按照我们的需求，对排版进行调整。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>这一标签对于现在来说并没用什么用处，不会使页面有什么变化，顶多可以把代码划分出区域，使其结构更加的清晰，但是它可以配合CSS去修饰某一块的样式。也是十分重要的一个知识点。</p>
+<h3 id="（2）图像"><a href="#（2）图像" class="headerlink" title="（2）图像"></a>（2）图像</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;图片路径&quot; alt=&quot;提示信息&quot; title=&quot;提示文字&quot; /&gt;</span><br><span class="line"></span><br><span class="line">这是图像标签，用于引入一个图片，在这个标签有三个属性：</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>src属性</li>
+<li>alt属性</li>
+<li>title属性</li>
+</ul>
+<h4 id="（1）src属性"><a href="#（1）src属性" class="headerlink" title="（1）src属性"></a>（1）src属性</h4><p>这个属性与上面的&lt;link&gt;标签的href属性类似，那个为文件路径，这个是图片路径，但是上面没有详细解释过，类似与这种路径的写法有两种，一种是相对路径，一种是绝对路径。<br>相对路径不太好理解，就是需要你要插入的图片和html文件位于同一个目录下，如下图所示：</p>
+<p><img src="/../img/1-5.png" alt="avatar"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;	</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">        &lt;img src=&quot;img/yasuo.jpg&quot; /&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/1-6.png" alt="avatar"></p>
+<p> 比如说我在html–练习这个文件夹里面创建了个test.html文件，同时这个文件夹里还有一个img文件夹，像引入这个img文件夹里的图片，因为他们处于同一级目录内，所以就可以按照上面所示引入这张照片，也可以是引入同样在html–练习文件夹里的图片，这样的话就不用写前面的img文件夹了。两者的效果是一样的。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;yasuo.jpg&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p>至于绝对路径就比较好理解了，相信小伙伴们平时也注意到，在我们安装什么软件时，会有一个安装路径，就是这个文件在你电脑上的位置：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;D:/HBuilderX/project/html--练习/img/yasuo.jpg&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="（2）alt属性"><a href="#（2）alt属性" class="headerlink" title="（2）alt属性"></a>（2）alt属性</h4><p>这个属性里面是输入提示信息的，所谓的提示信息指的是，当网页按照前面的路径找不到你存放的照片时，所显示的文字。比如加上alt属性，然后把路径删掉：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img alt=&quot;yasuo&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/1-7.png" alt="avatar"></p>
+<p>如上图，就会显示你输入的提示信息。</p>
+<h4 id="（3）title属性"><a href="#（3）title属性" class="headerlink" title="（3）title属性"></a>（3）title属性</h4><p>他和前面一项的提示信息容易混淆，这个提示文字说的是，当你的鼠标放到图片上时，所显现出来的文字：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;img/yasuo.jpg&quot; alt=&quot;yasuo&quot; title=&quot;灵魂莲华 亚索&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/1-8.png" alt="avatar"></p>
+<p> 事实上是有鼠标的，但因为我这个截图工具的原因，没显示出来，大家理解了就好。</p>
+<p>一般情况下，前两个属性是必须写的，而最后这个title属性可写可不写。</p>
+<h3 id="（3）链接"><a href="#（3）链接" class="headerlink" title="（3）链接"></a>（3）链接</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;链接地址&quot; target=&quot;打开方式&quot;&gt; 文本或图片 &lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<p>链接标签是一个双标签，同时还是一个行内元素，忘记可以翻看上面。至于它的属性一共有两个：</p>
+<ul>
+<li>href属性</li>
+<li>target属性</li>
+</ul>
+<h4 id="（1）href属性"><a href="#（1）href属性" class="headerlink" title="（1）href属性"></a>（1）href属性</h4><p>link标签里面提到过，当时他的意义时你CSS外部文件的地址，而在这里指的是链接的地址，它可以是网址：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;https://blog.csdn.net/weixin_65054907?spm=1000.2115.3001.5343&quot;&gt;幼儿班的小白&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/1-9.png" alt="avatar"></p>
+<p> 如上图所示当点击这串文字后就会跳转到我CSDN的主页。当然这串文字也替换为图片，格式就和上面提到的图片格式一样：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;https://blog.csdn.net/weixin_65054907?spm=1000.2115.3001.5343&quot;&gt;&lt;img src=&quot;img/yasuo.jpg&quot; alt=&quot;我的主页&quot;/&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>样式和上面引入图片后一样，不同的是点击图片会进行页面的跳转。</p>
+<p>同时这个属性的内容也可以是你自己写的html文件或者是当前html文件的某一部分，跳转到另一个html文件也比较好理解，只需要把这个链接地址改为你要跳转那个文件的路径，填写路径的方式和图片的一样：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;跳转文件.html&quot;&gt;跳转到另一个文件&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<p>或者是可以跳转到当前文件的某一部分，这样说可能会有些陌生，当时大家回忆一下，有些网页会有目录，当你点击目录的时候，网页会直接跳转到那一部分，比如某度百科，那个原理是一样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot; /&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;</span><br><span class="line">			&lt;a href=&quot;#technology&quot;&gt;前端开发核心技术&lt;/a&gt;&lt;br /&gt;</span><br><span class="line">			&lt;a href=&quot;#tool&quot;&gt;前端开发工具&lt;/a&gt;&lt;br /&gt;</span><br><span class="line">			&lt;a href=&quot;#frame&quot;&gt;前端开发框架&lt;/a&gt;&lt;br /&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		&lt;div id=&quot;technology&quot;&gt;</span><br><span class="line">			&lt;h2&gt;前端开发核心技术&lt;/h2&gt;</span><br><span class="line">			&lt;ul&gt;</span><br><span class="line">				&lt;li&gt;HTML&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;CSS&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;JavaScript&lt;/li&gt;</span><br><span class="line">			&lt;/ul&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		&lt;div id=&quot;tool&quot;&gt;</span><br><span class="line">			&lt;h2&gt;前端开发工具&lt;/h2&gt;</span><br><span class="line">			&lt;ul&gt;</span><br><span class="line">				&lt;li&gt;HBuilder&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;Sublime text&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;WebStorm&lt;/li&gt;</span><br><span class="line">			&lt;/ul&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		……&lt;br /&gt;</span><br><span class="line">		&lt;div id=&quot;frame&quot;&gt;</span><br><span class="line">			&lt;h2&gt;前端开发框架&lt;/h2&gt;</span><br><span class="line">			&lt;ul&gt;</span><br><span class="line">				&lt;li&gt;Angular&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;React&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;Vue&lt;/li&gt;</span><br><span class="line">			&lt;/ul&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="/../img/1-10.png" alt="avatar"></p>
+<p>每当点击上面的目录时，页面就会自动跳转到你所电机的内容部分，当然这个目录也可以是多级的，跳转到某一小部分也是可以的。至于这串代码里面用了一些列表的知识，马上会讲到，先去理解这个链接。</p>
+<p>对于href里的内容，用到的时之前讲过的div标签，将我的代码分成了几个部分，并且给每个部分都起了名字，也就是那个id属性，这算是一个通用属性，大部分标签都有，剩余小部分使用的是name属性。而在选取id时使用是“#id名”的方式，后续的CSS也会讲到，因为在CSS里这是一个最常用的方式。</p>
+<h4 id="（2）target-属性"><a href="#（2）target-属性" class="headerlink" title="（2）target 属性"></a>（2）target 属性</h4><p>这个属性里填写的是链接的打开方式，在基础阶段，就认识两个就可以了：</p>
+<div align="center">
+    <table border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+        <thead>
+            <tr>
+                <th style="width:249px;">target属性值</th>
+                <th style="width:249px;">说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width:249px;">_self</td>
+                <td style="width:249px;">在当前网页打开</td>
+            </tr>
+            <tr>
+                <td style="width:249px;">_blank</td>
+                <td style="width:249px;">在新窗口打开</td>
+            </tr>
+        </tbody>
+    </table>	
+</div>
+
+
+<p>这个两个，相信对于经常网上冲浪的小伙伴们来说并不难理解，一个是在点击链接后直接在当前页面进行跳转，另一个是保持原来的页面不变，在新建一个页面并打开点击的链接。需要注意的是这两个属性值前面需要加下划线“_”，别和其他符号弄混。</p>
+<h3 id="（4）列表"><a href="#（4）列表" class="headerlink" title="（4）列表"></a>（4）列表</h3><p>列表也是网页中一种比较常用的排列格式，共分为两种：</p>
+<ul>
+<li>有序列表</li>
+<li>无序列表</li>
+</ul>
+<h4 id="（1）有序列表"><a href="#（1）有序列表" class="headerlink" title="（1）有序列表"></a>（1）有序列表</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;ol type=&quot;属性值&quot;&gt;</span><br><span class="line"></span><br><span class="line">	&lt;li&gt;列表内容&lt;/li&gt;</span><br><span class="line"></span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+
+<p>&lt;ol&gt;标签为有序列表，是ordered list的简称。而他里边的&lt;li&gt;标签是列表的内容，可以有根据你的需求有很多项。</p>
+<p>而他的type属性值是用来描述有序列表前边序号的。共有5种：</p>
+<div align="center">
+    <table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+        <thead>
+            <tr>
+                <th style="width:165px;">有序列表type属性值</th>
+                <th style="width:333px;">列表项符号</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width:165px;">1</td>
+                <td style="width:333px;">阿拉伯数字：1、2、3……（默认值）</td>
+            </tr>
+            <tr>
+                <td style="width:165px;">a</td>
+                <td style="width:333px;">小写英文字母：a、b、c……</td>
+            </tr>
+            <tr>
+                <td style="width:165px;">A</td>
+                <td style="width:333px;">大写英文字母：A、B、C……</td>
+            </tr>
+            <tr>
+                <td style="width:165px;">i</td>
+                <td style="width:333px;">小写罗马数字：i、ii、iii……</td>
+            </tr>
+            <tr>
+                <td style="width:165px;">I</td>
+                <td style="width:333px;">大写罗马数字：I、II、III……</td>
+            </tr>
+        </tbody>
+    </table>	
+</div>
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot; /&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    	&lt;h2&gt;前端开发核心技术&lt;/h2&gt;</span><br><span class="line">        &lt;ol type=&quot;I&quot;&gt;</span><br><span class="line">	    	&lt;li&gt;HTML&lt;/li&gt;</span><br><span class="line">	    	&lt;li&gt;CSS&lt;/li&gt;</span><br><span class="line">		    &lt;li&gt;JavaScript&lt;/li&gt;</span><br><span class="line">        &lt;/ol&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="/../img/1-11.png" alt="avatar"></p>
+<h4 id="（2）无序列表"><a href="#（2）无序列表" class="headerlink" title="（2）无序列表"></a>（2）无序列表</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;ul type=&quot;属性值&quot;&gt;</span><br><span class="line"></span><br><span class="line">	&lt;li&gt;列表内容&lt;/li&gt;</span><br><span class="line"></span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<p> 这个列表和有序列表大同小异唯一不同的是属性值有一定的变化：</p>
+<div align="center">
+    <table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+        <thead>
+            <tr>
+                <th style="width:204px;">无序列表type属性值</th>
+                <th style="width:294px;">说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>disc</td>
+                <td>实心圆●（默认值）</td>
+            </tr>
+            <tr>
+                <td>circle</td>
+                <td>空心圆○</td>
+            </tr>
+            <tr>
+                <td>square</td>
+                <td>正方形■</td>
+            </tr>
+        </tbody>
+    </table>	
+</div>
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot; /&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;h2&gt;前端开发核心技术&lt;/h2&gt;</span><br><span class="line">		&lt;ul type=&quot;disc&quot;&gt;</span><br><span class="line">			&lt;li&gt;HTML&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;CSS&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;JavaScript&lt;/li&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="/../img/1-12.png" alt="avatar"></p>
+<p> 这一部分比较简单，内容也比较少。需要注意的是，首先这两种列表都是属于块元素，也就是需要自己占一行的；同时这两种列表的type属性可以不写，这样的话就会自动使用默认值；还有&amp;ly;ul&gt;无序列表里的子元素只能是&amp;ly;li&gt;，不能是其他标签。</p>
+<h3 id="（5）表格"><a href="#（5）表格" class="headerlink" title="（5）表格"></a>（5）表格</h3><p>这个表格可能看上去比较复杂，其实和列表有些一些异曲同工之妙。我们可以把表格看作是很多个列表堆叠在一起，把几个列表合成一个，然后加入了一些新的结构。所以这一部分也很简答，只需要记住一个基本结构，和两个基本属性就好了。</p>
+<p>基本结构：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot; /&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;table&gt;</span><br><span class="line">			&lt;caption&gt;成绩单&lt;/caption&gt;		&lt;!--表格标题--&gt;</span><br><span class="line">			&lt;thead&gt;		&lt;!--表头--&gt;</span><br><span class="line">				&lt;tr&gt;	&lt;!--行--&gt;</span><br><span class="line">					&lt;th&gt;姓名&lt;/th&gt;</span><br><span class="line">					&lt;th&gt;语文&lt;/th&gt;</span><br><span class="line">					&lt;th&gt;数学&lt;/th&gt;</span><br><span class="line">					&lt;th&gt;英语&lt;/th&gt;</span><br><span class="line">				&lt;/tr&gt;</span><br><span class="line">			&lt;/thead&gt;</span><br><span class="line">			&lt;tbody&gt;		&lt;!--表身--&gt;</span><br><span class="line">				&lt;tr&gt;</span><br><span class="line">					&lt;td&gt;小明&lt;/td&gt;</span><br><span class="line">					&lt;td&gt;59&lt;/td&gt;</span><br><span class="line">					&lt;td&gt;60&lt;/td&gt;</span><br><span class="line">					&lt;td&gt;90&lt;/td&gt;</span><br><span class="line">				&lt;/tr&gt;</span><br><span class="line">			&lt;/tbody&gt;	</span><br><span class="line">			&lt;tfoot&gt;		&lt;!--表脚--&gt;</span><br><span class="line">				&lt;tr&gt;</span><br><span class="line">					&lt;td&gt;等级&lt;/td&gt;</span><br><span class="line">					&lt;td&gt;不及格&lt;/td&gt;</span><br><span class="line">					&lt;td&gt;及格&lt;/td&gt;</span><br><span class="line">					&lt;td&gt;优秀&lt;/td&gt;</span><br><span class="line">				&lt;/tr&gt;</span><br><span class="line">			&lt;/tfoot&gt;</span><br><span class="line">		&lt;/table&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="/../img/1-13.png" alt="avatar"></p>
+<p> 虽然这个结构看上去会有些复杂，但是如果拆开来看就不会了，首先表格需要在&lt;body&gt;标签里建立一个&lt;table&gt;标签来声明一个表格，与之前列表的ol标签是一样。接着是一个表格的标题，用的是&lt;caption&gt;标签，它会显示在表格最上方的居中位置。然后&lt;tr&gt;标签代表的是行，你的表格最最多需要几行，就会有几个&lt;tr&gt;标签。&lt;tr&gt;标签的里面是&amp;ly;td&gt;标签代表的是单元格，也就是表格的内容或者可以理解为列，其中有一个特殊针对表头的表达方式是&lt;th&gt;标签，他和&lt;td&gt;标签的意思是一样的，只是会自动地加粗文字。最后是&lt;thead&gt;、&lt;tbody&gt;、&lt;tfoot&gt;这三个标签，他们并没有什么实际的作用，但是同&lt;div&gt;标签一样，起个让结构更清晰的作用，同时方便CSS的选取。</p>
+<p>上面就是一个表格的完整结构，下面来说说单元格的两个重要属性：</p>
+<ul>
+<li>rowspan属性</li>
+<li>colspan属性</li>
+</ul>
+<h4 id="（1）colspan-属性"><a href="#（1）colspan-属性" class="headerlink" title="（1）colspan 属性"></a>（1）colspan 属性</h4><p>这个属性的意义是合并列，用于将表格的几列表格合并在一起，写在&lt;td&gt;单元格标签里，属性值说的是合并的数量：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot; /&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		    table,tr,td&#123;border:1px solid black;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;table&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td colspan=&quot;2&quot;&gt;学科&lt;/td&gt;</span><br><span class="line">			&lt;/tr&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td&gt;高等数学&lt;/td&gt;</span><br><span class="line">				&lt;td&gt;大学英语&lt;/td&gt;</span><br><span class="line">			&lt;/tr&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td&gt;大学物理&lt;/td&gt;</span><br><span class="line">				&lt;td&gt;大学体育&lt;/td&gt;</span><br><span class="line">			&lt;/tr&gt;</span><br><span class="line">		&lt;/table&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="/../img/1-14.png" alt="avatar"></p>
+<p>因为默认情况下，表格是没有边框的。在这个例子中，我们使用了CSS加入边框，这样会让表格有一个更清晰表格结构，现在就只需要了解就好，这些都属CS的范畴。这里可以看出学科这个单元格占了两列的位置，如果要是没有用这个属性：</p>
+<p><img src="/../img/1-15.png" alt="avatar"></p>
+<p> 可以清晰地看出多了一条线，所以需要根据自己的需要，对表格进行调整。</p>
+<h4 id="（2）rowspan属性"><a href="#（2）rowspan属性" class="headerlink" title="（2）rowspan属性"></a>（2）rowspan属性</h4><p>如果弄明白上面的那个属性，那么这个也就好理解了，这个属性是意义是合并行，也就是把几行合并在一起：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot; /&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		    table,tr,td&#123;border:1px solid black;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;table&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td rowspan=&quot;2&quot;&gt;学科&lt;/td&gt;</span><br><span class="line">				&lt;td&gt;高等数学&lt;/td&gt;</span><br><span class="line">				&lt;td&gt;大学英语&lt;/td&gt;</span><br><span class="line">			&lt;/tr&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td&gt;大学物理&lt;/td&gt;</span><br><span class="line">				&lt;td&gt;大学体育&lt;/td&gt;</span><br><span class="line">			&lt;/tr&gt;</span><br><span class="line">		&lt;/table&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="/../img/1-16.png" alt="avatar"></p>
+<p>这个也比较好理解，rowspan&#x3D;”2”指的是合并行，然后后面继续写第一行的东西，而第二行的时候</p>
+<p>因为第一列已经一个占了两行的学科，所以就直接写后面两列就好了。那如果合并行在不在第一列应该怎么写：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot; /&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		    table,tr,td&#123;border:1px solid black;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;table&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td&gt;小红&lt;/td&gt;</span><br><span class="line">				&lt;td rowspan=&quot;2&quot;&gt;学科&lt;/td&gt;</span><br><span class="line">				&lt;td&gt;高等数学&lt;/td&gt;</span><br><span class="line">				&lt;td&gt;大学英语&lt;/td&gt;</span><br><span class="line">			&lt;/tr&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td&gt;小明&lt;/td&gt;</span><br><span class="line">				&lt;td&gt;大学物理&lt;/td&gt;</span><br><span class="line">				&lt;td&gt;大学体育&lt;/td&gt;</span><br><span class="line">			&lt;/tr&gt;</span><br><span class="line">		&lt;/table&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="/../img/1-17.png" alt="avatar"></p>
+<p> 如上方所示，就直接每一行的第一个单元格直接加就可以。只要在写表格时候，清楚我们每一个单元格的位置，如果有合并多行或是多列的情况就只跳过就好了。</p>
+<h3 id="（6）表单"><a href="#（6）表单" class="headerlink" title="（6）表单"></a>（6）表单</h3><p>表单的结构与表格有些类似，首先在写表格之前，需要先用&lt;table&gt;标签先声明一个表格，然后再在这个&lt;table&gt;标签里面写，而表单则是需要一个&lt;from&gt;标签来声明。但是两者还是有本质上的区别，表格很好理解，就是表格，而表单指的是文本框、按钮、单选框、复选框、下拉列表等的统称。之所以把他放在最后，是因为是这几项功能里边最复杂最重要的一项。或不多说，进入正题！</p>
+<p>在&lt;from&gt;标签中共有这3种子标签：</p>
+<ul>
+<li>&lt;input&gt;标签</li>
+<li>&lt;textarea&gt;标签</li>
+<li>&lt;select&gt;标签</li>
+</ul>
+<!-- 正在创作，敬请期待  
+————————————————  
+版权声明：本文为CSDN博主「幼儿班的小白」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_65054907/article/details/125694213 -->]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+</search>
