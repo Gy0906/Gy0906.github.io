@@ -3,13 +3,10 @@
   <entry>
     <title>HTML入门笔记</title>
     <url>/2022/12/31/HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1> 一、HTML介绍： </h1>
-Hyper Text Markup Language（超文本标记语言），他是属于一种网页的标准语言，但是不算是一种编程语言，而是一种Markup Language，即标记语言。它是属于前端开发的三大核心技术之一，另外两项是CSS和JavaScript。
-
+    <content><![CDATA[<h1 id="一、HTML介绍："><a href="#一、HTML介绍：" class="headerlink" title="一、HTML介绍："></a>一、HTML介绍：</h1><p>Hyper Text Markup Language（超文本标记语言），他是属于一种网页的标准语言，但是不算是一种编程语言，而是一种Markup Language，即标记语言。它是属于前端开发的三大核心技术之一，另外两项是CSS和JavaScript。</p>
 <p><font size="5">HTML、CSS、JavaScript三者有何区别？？</font></p>
 <p>HTML用于构造网页的结构，例如：网页中的文字、表格、按钮、链接等等。而CSS用于修饰网页中的元素，就是把上述这些元素进行调整，例如：文字的大小，颜色，背景的样式等等。JavaScript用于实现网页的交互，比如在点击某个地方后页面会发生跳转，或是网页中需要用到的函数。</p>
-<h2>通俗的来说将，如果把写网页比作成盖房子，HTML相当于房子的地基，墙，屋顶，用于构造房子；CSS相当于装修你的房子，用作房子的修饰；JavaScript相当于屋内的各种家具，用于实现这个房子的功能。</h2>
-
+<p>通俗的来说将，如果把写网页比作成盖房子，HTML相当于房子的地基，墙，屋顶，用于构造房子；CSS相当于装修你的房子，用作房子的修饰；JavaScript相当于屋内的各种家具，用于实现这个房子的功能。</p>
 <p>HTML最初于1989年由CERN的Tim Berners-Lee发明。HTML基于更古老一些的语言SGML定义，并简化了其中的语言元素。</p>
 <div align="center">
     <table>
