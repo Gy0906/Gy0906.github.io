@@ -45,7 +45,7 @@
 <meta property="og:image" content="http://gy0906.github.io/img/1-16.png">
 <meta property="og:image" content="http://gy0906.github.io/img/1-17.png">
 <meta property="article:published_time" content="2022-12-31T07:12:29.000Z">
-<meta property="article:modified_time" content="2023-01-15T15:49:15.868Z">
+<meta property="article:modified_time" content="2023-02-08T13:15:17.487Z">
 <meta property="article:author" content="回幼儿园当学霸">
 <meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
@@ -270,7 +270,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-01-15 23:49:15" itemprop="dateModified" datetime="2023-01-15T23:49:15+08:00">2023-01-15</time>
+      <time title="修改时间：2023-02-08 21:15:17" itemprop="dateModified" datetime="2023-02-08T21:15:17+08:00">2023-02-08</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -805,16 +805,14 @@
 <p>效果如下：<br>1-31</p>
 <p>这里还需要另一个标签–option标签。他的结构类似于表格，一个select标签是一个下拉列表，一个option标签是一个选项。</p>
 <p>两个标签分别有两个常用的属性</p>
-<h5 id="select标签"><a href="#select标签" class="headerlink" title="select标签"></a>select标签</h5><blockquote>
-<p><select multiple="multiple" size="显示的数量（整数）"></select></p>
-</blockquote>
+<h5 id="select标签"><a href="#select标签" class="headerlink" title="select标签"></a>select标签</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">multiple</span>=<span class="string">&quot;multiple&quot;</span> <span class="attr">size</span>=<span class="string">&quot;显示的数量（整数）&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>multiple属性可以是下拉列表可以多选，但是需要CTRL+鼠标左键来操作。但是同时也会改变下拉列表的样式。同时这个属性也可以直接简写为multiple，和前边的checked属性原理是一样的。</p>
 <p>效果如下：<br>1-32</p>
 <p>size属性是用控制下拉列表的长度，比如像上图改为可多选后现实的长度就会默认为4格，而size属性的取值就是最后所显示的长度。</p>
 <p>仔细观察，修改完属性值后下拉列表的像样式改变了，只要是设置了可多选，或是size的属性值不为1，则最后的样子都是如上图的可以滑动的列表的样子。</p>
-<h5 id="option标签"><a href="#option标签" class="headerlink" title="option标签"></a>option标签</h5><blockquote>
-<option selected="selected" value="属性值">选项</option>
-</blockquote>
+<h5 id="option标签"><a href="#option标签" class="headerlink" title="option标签"></a>option标签</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">selected</span>=<span class="string">&quot;selected&quot;</span> <span class="attr">value</span>=<span class="string">&quot;属性值&quot;</span>&gt;</span>选项<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>selected类似于之前的checked属性，是给下拉列表一个默认值。同时它也可以简写和checked属性原理一样。</p>
 <p>value属性则是前边单选框中的value属性意义一样，是为了后边的JavaScript对下拉列表可以进行数据的处理。</p>
 
