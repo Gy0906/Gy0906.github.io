@@ -9,45 +9,41 @@
 <p>HTML用于构造网页的结构，例如：网页中的文字、表格、按钮、链接等等。而CSS用于修饰网页中的元素，就是把上述这些元素进行调整，例如：文字的大小，颜色，背景的样式等等。JavaScript用于实现网页的交互，比如在点击某个地方后页面会发生跳转，或是网页中需要用到的函数。</p>
 <p>通俗的来说将，如果把写网页比作成盖房子，HTML相当于房子的地基，墙，屋顶，用于构造房子；CSS相当于装修你的房子，用作房子的修饰；JavaScript相当于屋内的各种家具，用于实现这个房子的功能。</p>
 <p>HTML最初于1989年由CERN的Tim Berners-Lee发明。HTML基于更古老一些的语言SGML定义，并简化了其中的语言元素。</p>
-<div>
-    <table>
-        <thead>
-            <tr>
-                <th style="width:150px;">版本号</th>
-                <th style="width:350px;">说明</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>HTML 1.0</td>
-                <td>在1993年6月作为互联网工程工作小组(IETF)工作草案发布。</td>
-            </tr>
-            <tr>
-                <td>HTML 2.0</td>
-                <td>1995年1 1月作为RFC 1866发布，于2000年6月发布之后被宣布已经过时。</td>
-            </tr>
-            <tr>
-                <td>HTML 3.2</td>
-                <td>1997年1月14日，W3C推荐标准。</td>
-            </tr>
-            <tr>
-                <td>HTML 4.0</td>
-                <td>1997年12月18日，W3C推荐标准。</td>
-            </tr>
-            <tr>
-                <td>HTML 4.01</td>
-                <td>（微小改进）：1999年12月24日，W3C推荐标准。</td>
-            </tr>
-            <tr>
-                <td>HTML 5</td>
-                <td>HTML5是公认的下一代Web语言，极大地提升了Web在富媒体、富内容和富应用等方面的能力，被喻为终将改变移动互联网的重要推手。Internet Explorer 8及以前的版本不支持。</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
+<table>
+<thead>
+<tr>
+<th align="left">版本号</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">HTML1.0</td>
+<td align="left">在1993年6月作为互联网工程工作小组(IETF)工作草案发布。</td>
+</tr>
+<tr>
+<td align="left">HTML2.0</td>
+<td align="left">1995年1 1月作为RFC 1866发布，于2000年6月发布之后被宣布已经过时。</td>
+</tr>
+<tr>
+<td align="left">HTML3.2</td>
+<td align="left">1997年1月14日，W3C推荐标准。</td>
+</tr>
+<tr>
+<td align="left">HTML4.0</td>
+<td align="left">1997年12月18日，W3C推荐标准。</td>
+</tr>
+<tr>
+<td align="left">HTML4.01</td>
+<td align="left">（微小改进）：1999年12月24日，W3C推荐标准。</td>
+</tr>
+<tr>
+<td align="left">HTML5</td>
+<td align="left">HTML5是公认的下一代Web语言，极大地提升了Web在富媒体、富内容和富应用等方面的能力，被喻为终将改变移动互联网的重要推手。Internet Explorer 8及以前的版本不支持。</td>
+</tr>
+</tbody></table>
 <h1 id="二-html基本结构"><a href="#二、HTML基本结构：" class="headerlink" title="二、HTML基本结构："></a>二、HTML基本结构：</h1><p>在学习基本标签之前，我们先要认识一下html文件的基本结构。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span>   </span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>这就是html最核心的结构，不管什么样的网页都是有着几部分构成。这其中的&lt;&gt;我们叫做标签，或者叫做元素。当然我们会发现它们基本上是成对出现的，例如&lt;head&gt;表示head这部分的开始，而&lt;&#x2F;head&gt;表示结束，至于每个标签的含义，下面我们来学习。</p>
 <blockquote>
 <!DOCTYPE html></blockquote>
@@ -82,81 +78,47 @@
 <li>name属性</li>
 <li>http-equiv属性</li>
 </ul>
-<h3 id="1name属性"><a href="#（1）name属性：" class="headerlink" title="（1）name属性："></a>（1）name属性：</h3><div align="center">
-    <table border="1" cellpadding="1" cellspacing="1" style="width:500px;">
-        <thead>
-            <tr>
-                <th style="width:200px;">name属性值取值</th>
-                <th style="width:300px;">说明</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="width:200px;">keywords</td>
-                <td style="width:300px;">网页的关键字</td>
-            </tr>
-            <tr>
-                <td style="width:200px;">description</td>
-                <td style="width:300px;">网页的描述</td>
-            </tr>
-            <tr>
-                <td style="width:200px;">author</td>
-                <td style="width:300px;">作者</td>
-            </tr>
-            <tr>
-                <td style="width:200px;">copyright</td>
-                <td style="width:300px;">版权信息</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<table>
+<h3 id="1name属性"><a href="#（1）name属性：" class="headerlink" title="（1）name属性："></a>（1）name属性：</h3><table>
 <thead>
 <tr>
-<th align="center">name属性值</th>
-<th align="center">说明</th>
+<th align="left">name属性值</th>
+<th align="left">说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">keywords</td>
-<td align="center">网页中的关键字</td>
+<td align="left">keywords</td>
+<td align="left">网页中的关键字</td>
 </tr>
 <tr>
-<td align="center">description</td>
-<td align="center">网页的描述</td>
+<td align="left">description</td>
+<td align="left">网页的描述</td>
 </tr>
 <tr>
-<td align="center">author</td>
-<td align="center">作者</td>
+<td align="left">author</td>
+<td align="left">作者</td>
 </tr>
 <tr>
-<td align="center">copyright</td>
-<td align="center">版权信息</td>
+<td align="left">copyright</td>
+<td align="left">版权信息</td>
 </tr>
 </tbody></table>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--关键字：可以有多个关键字--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span>  <span class="attr">name</span>=<span class="string">&quot;keywords&quot;</span> <span class="attr">content</span>=<span class="string">&quot;前端开发,零基础入门&quot;</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--网页描述：对于网页内容的描述--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span>  <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;HTML零基础入门一——基本标签&quot;</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--作者信息--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span>  <span class="attr">name</span>=<span class="string">&quot;author&quot;</span> <span class="attr">content</span>=<span class="string">&quot;幼儿班的小白&quot;</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--版权声明--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span>  <span class="attr">name</span>=<span class="string">&quot;copyright&quot;</span> <span class="attr">content</span>=<span class="string">&quot;原创不易，请勿转载&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="2http-equiv属性"><a href="#（2）http-equiv属性：" class="headerlink" title="（2）http-equiv属性："></a>（2）http-equiv属性：</h3><div align="center">
-    <table border="1" cellpadding="1" cellspacing="1" style="width:511px;">
-        <thead>
-            <tr>
-                <th style="width:233px;">http-equiv属性取值</th>
-                <th style="width:274px;">说明</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="width:233px;">Content-Type</td>
-                <td style="width:274px;">定义网页</td>
-            </tr>
-            <tr>
-                <td style="width:233px;">refresh</td>
-                <td style="width:274px;">定时刷新界面并跳转</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
+<h3 id="2http-equiv属性"><a href="#（2）http-equiv属性：" class="headerlink" title="（2）http-equiv属性："></a>（2）http-equiv属性：</h3><table>
+<thead>
+<tr>
+<th align="left">http-equiv属性取值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Content-Type</td>
+<td align="left">定义网页</td>
+</tr>
+<tr>
+<td align="left">refresh</td>
+<td align="left">定时刷新界面并跳转</td>
+</tr>
+</tbody></table>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">html</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--页面所使用的编码是utf-8--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=utf-8&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>这句代码也可以简写为：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
@@ -189,50 +151,46 @@
 
 <p>这一部分上面也接触到过，叫段落标签，比较常用。通常我们浏览网页中，那种大段的文字都是用的这个标签。在这里需要注意的是&lt;p&gt;标签中的内容是一个段落，在网页呈现的效果是可以自动换行的，因为每一个&lt;p&gt;标签就是一个段落，并且每个段落之间还会有一些空隙。</p>
 <p>除此之外还有一些对文本进行处理的文本标签：</p>
-<div align="center">
-    <table border="1" cellpadding="1" cellspacing="1" style="width:618px;">
-        <thead>
-            <tr>
-                <th style="width:253px;">文本标签</th>
-                <th style="width:365px;">说明</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="width:253px;">strong、b</td>
-                <td style="width:365px;">粗体</td>
-            </tr><tr>
-                <td style="width:253px;">em、cite、i</td>
-                <td style="width:365px;">斜体</td>
-            </tr>
-            <tr>
-                <td style="width:253px;">sup</td>
-                <td style="width:365px;">上标</td>
-            </tr>
-            <tr>
-                <td style="width:253px;">sub</td>
-                <td style="width:365px;">下标</td>
-            </tr>
-            <tr>
-                <td style="width:253px;">s</td>
-                <td style="width:365px;">中划线</td>
-            </tr>
-            <tr>
-                <td style="width:253px;">u</td>
-                <td style="width:365px;">下划线</td>
-            </tr>
-            <tr>
-                <td style="width:253px;">big</td>
-                <td style="width:365px;">大字</td>
-            </tr>
-            <tr>
-                <td style="width:253px;">small</td>
-                <td style="width:365px;">小字</td>
-            </tr>
-        </tbody>
-    </table>	
-</div>
-
+<table>
+<thead>
+<tr>
+<th align="left">文本标签</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">strong、b</td>
+<td align="left">粗体</td>
+</tr>
+<tr>
+<td align="left">em、cite、i</td>
+<td align="left">斜体</td>
+</tr>
+<tr>
+<td align="left">sup</td>
+<td align="left">上标</td>
+</tr>
+<tr>
+<td align="left">sub</td>
+<td align="left">下标</td>
+</tr>
+<tr>
+<td align="left">s</td>
+<td align="left">中划线</td>
+</tr>
+<tr>
+<td align="left">u</td>
+<td align="left">下划线</td>
+</tr>
+<tr>
+<td align="left">big</td>
+<td align="left">大字</td>
+</tr>
+<tr>
+<td align="left">small</td>
+<td align="left">小字</td>
+</tr>
+</tbody></table>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span>	</span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>好好学习，天天向上。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">strong</span>&gt;</span>好好学习，天天向上。<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">em</span>&gt;</span>好好学习，天天向上。<span class="tag">&lt;/<span class="name">em</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">big</span>&gt;</span>好好学习，天天向上。<span class="tag">&lt;/<span class="name">big</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">small</span>&gt;</span>好好学习，天天向上。<span class="tag">&lt;/<span class="name">small</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">u</span>&gt;</span>好好学习，天天向上。<span class="tag">&lt;/<span class="name">u</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">s</span>&gt;</span>原价10.00<span class="tag">&lt;/<span class="name">s</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span>(a+b)<span class="tag">&lt;<span class="name">sup</span>&gt;</span>2<span class="tag">&lt;/<span class="name">sup</span>&gt;</span>=a<span class="tag">&lt;<span class="name">sup</span>&gt;</span>2<span class="tag">&lt;/<span class="name">sup</span>&gt;</span>+b<span class="tag">&lt;<span class="name">sup</span>&gt;</span>2<span class="tag">&lt;/<span class="name">sup</span>&gt;</span>+2ab<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span>H<span class="tag">&lt;<span class="name">sub</span>&gt;</span>2<span class="tag">&lt;/<span class="name">sub</span>&gt;</span>SO<span class="tag">&lt;<span class="name">sub</span>&gt;</span>4<span class="tag">&lt;/<span class="name">sub</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="/../img/1-3.png" alt="avatar"></p>
@@ -299,28 +257,22 @@
 <p>每当点击上面的目录时，页面就会自动跳转到你所电机的内容部分，当然这个目录也可以是多级的，跳转到某一小部分也是可以的。至于这串代码里面用了一些列表的知识，马上会讲到，先去理解这个链接。</p>
 <p>对于href里的内容，用到的时之前讲过的div标签，将我的代码分成了几个部分，并且给每个部分都起了名字，也就是那个id属性，这算是一个通用属性，大部分标签都有，剩余小部分使用的是name属性。而在选取id时使用是“#id名”的方式，后续的CSS也会讲到，因为在CSS里这是一个最常用的方式。</p>
 <h4 id="2target-属性"><a href="#（2）target-属性" class="headerlink" title="（2）target 属性"></a>（2）target 属性</h4><p>这个属性里填写的是链接的打开方式，在基础阶段，就认识两个就可以了：</p>
-<div align="center">
-    <table border="1" cellpadding="1" cellspacing="1" style="width:500px;">
-        <thead>
-            <tr>
-                <th style="width:249px;">target属性值</th>
-                <th style="width:249px;">说明</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="width:249px;">_self</td>
-                <td style="width:249px;">在当前网页打开</td>
-            </tr>
-            <tr>
-                <td style="width:249px;">_blank</td>
-                <td style="width:249px;">在新窗口打开</td>
-            </tr>
-        </tbody>
-    </table>	
-</div>
-
-
+<table>
+<thead>
+<tr>
+<th align="left">target属性值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">_self</td>
+<td align="left">在当前网页打开</td>
+</tr>
+<tr>
+<td align="left">_blank</td>
+<td align="left">在新窗口打开</td>
+</tr>
+</tbody></table>
 <p>这个两个，相信对于经常网上冲浪的小伙伴们来说并不难理解，一个是在点击链接后直接在当前页面进行跳转，另一个是保持原来的页面不变，在新建一个页面并打开点击的链接。需要注意的是这两个属性值前面需要加下划线“_”，别和其他符号弄混。</p>
 <h3 id="4列表"><a href="#（4）列表" class="headerlink" title="（4）列表"></a>（4）列表</h3><p>列表也是网页中一种比较常用的排列格式，共分为两种：</p>
 <ul>
@@ -331,71 +283,59 @@
 
 <p>&lt;ol&gt;标签为有序列表，是ordered list的简称。而他里边的&lt;li&gt;标签是列表的内容，可以有根据你的需求有很多项。</p>
 <p>而他的type属性值是用来描述有序列表前边序号的。共有5种：</p>
-<div align="center">
-    <table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
-        <thead>
-            <tr>
-                <th style="width:165px;">有序列表type属性值</th>
-                <th style="width:333px;">列表项符号</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="width:165px;">1</td>
-                <td style="width:333px;">阿拉伯数字：1、2、3……（默认值）</td>
-            </tr>
-            <tr>
-                <td style="width:165px;">a</td>
-                <td style="width:333px;">小写英文字母：a、b、c……</td>
-            </tr>
-            <tr>
-                <td style="width:165px;">A</td>
-                <td style="width:333px;">大写英文字母：A、B、C……</td>
-            </tr>
-            <tr>
-                <td style="width:165px;">i</td>
-                <td style="width:333px;">小写罗马数字：i、ii、iii……</td>
-            </tr>
-            <tr>
-                <td style="width:165px;">I</td>
-                <td style="width:333px;">大写罗马数字：I、II、III……</td>
-            </tr>
-        </tbody>
-    </table>	
-</div>
-
-
+<table>
+<thead>
+<tr>
+<th align="left">有序列表type属性值</th>
+<th align="left">列表项符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">阿拉伯数字：1、2、3……（默认值）</td>
+</tr>
+<tr>
+<td align="left">a</td>
+<td align="left">小写英文字母：a、b、c……</td>
+</tr>
+<tr>
+<td align="left">A</td>
+<td align="left">大写英文字母：A、B、C……</td>
+</tr>
+<tr>
+<td align="left">i</td>
+<td align="left">小写罗马数字：i、ii、iii……</td>
+</tr>
+<tr>
+<td align="left">I</td>
+<td align="left">大写罗马数字：I、II、III……</td>
+</tr>
+</tbody></table>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">h2</span>&gt;</span>前端开发核心技术<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">&quot;I&quot;</span>&gt;</span></span><br><span class="line">	    	<span class="tag">&lt;<span class="name">li</span>&gt;</span>HTML<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	    	<span class="tag">&lt;<span class="name">li</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		    <span class="tag">&lt;<span class="name">li</span>&gt;</span>JavaScript<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <p><img src="/../img/1-11.png" alt="avatar"></p>
 <h4 id="2无序列表"><a href="#（2）无序列表" class="headerlink" title="（2）无序列表"></a>（2）无序列表</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">type</span>=<span class="string">&quot;属性值&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>列表内容<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p> 这个列表和有序列表大同小异唯一不同的是属性值有一定的变化：</p>
-<div align="center">
-    <table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
-        <thead>
-            <tr>
-                <th style="width:204px;">无序列表type属性值</th>
-                <th style="width:294px;">说明</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>disc</td>
-                <td>实心圆●（默认值）</td>
-            </tr>
-            <tr>
-                <td>circle</td>
-                <td>空心圆○</td>
-            </tr>
-            <tr>
-                <td>square</td>
-                <td>正方形■</td>
-            </tr>
-        </tbody>
-    </table>	
-</div>
-
-
+<table>
+<thead>
+<tr>
+<th align="left">无序列表type属性值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">disc</td>
+<td align="left">实心圆●（默认值）</td>
+</tr>
+<tr>
+<td align="left">circle</td>
+<td align="left">空心圆○</td>
+</tr>
+<tr>
+<td align="left">square</td>
+<td align="left">正方形■</td>
+</tr>
+</tbody></table>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">h2</span>&gt;</span>前端开发核心技术<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">ul</span> <span class="attr">type</span>=<span class="string">&quot;disc&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>HTML<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>JavaScript<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <p><img src="/../img/1-12.png" alt="avatar"></p>
@@ -415,7 +355,7 @@
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">		    <span class="selector-tag">table</span>,<span class="selector-tag">tr</span>,<span class="selector-tag">td</span>&#123;<span class="attribute">border</span>:<span class="number">1px</span> solid black;&#125;</span></span><br><span class="line"><span class="language-css">		</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>学科<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span>高等数学<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span>大学英语<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span>大学物理<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span>大学体育<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <p><img src="/../img/1-14.png" alt="avatar"></p>
-<p>因为默认情况下，表格是没有边框的。在这个例子中，我们使用了CSS加入边框，这样会让表格有一个更清晰表格结构，现在就只需要了解就好，这些都属CS的范畴。这里可以看出学科这个单元格占了两列的位置，如果要是没有用这个属性：</p>
+<p>因为默认情况下，表格是没有边框的。在这个例子中，我们使用了CSS加入边框，这样会让表格有一个更清晰表格结构，现在就只需要了解就好，这些都属CSS的范畴。这里可以看出学科这个单元格占了两列的位置，如果要是没有用这个属性：</p>
 <p><img src="/../img/1-15.png" alt="avatar"></p>
 <p> 可以清晰地看出多了一条线，所以需要根据自己的需要，对表格进行调整。</p>
 <h4 id="2rowspan属性"><a href="#（2）rowspan属性" class="headerlink" title="（2）rowspan属性"></a>（2）rowspan属性</h4><p>如果弄明白上面的那个属性，那么这个也就好理解了，这个属性是意义是合并行，也就是把几行合并在一起：</p>
@@ -435,357 +375,150 @@
 <li>&lt;textarea&gt;标签</li>
 <li>&lt;select&gt;标签</li>
 </ul>
-<p>在<from>标签中共有这3种子标签：</from></p>
-<p><input>标签</p>
-<textarea>标签
-</textarea><select>标签
-
-(1)form标签
-
-首先是form标签内部中可能用到的一些属性
-
-<form name="表单名称" method="提交方式" action="提交地址" target="打开方式" enctpy="编码方式"></form>
-
-1、name属性
-用来区分各个表单，就是给你得每个表单去一个名字。和前边的id属性有点类似，只不过不一样的是：首先id的值是不能一样的，每个标签都是一个独一无二的名字，而name属性的值是可以一样的。
-
-2、method属性
-用来写提交的方式，属性值有两个，一个是"post"，另一个是"get"，但是一般使用的是"post"，因为安全性比较高
-
-3、action属性
-用于填写表单中数据提交的地址或是，一般情况下，这三个属性是配合着使用的。
-
-4、target属性
-用于写提交的方式在前边的a标签中提到过，和前边的用法完全一样，主要有"_self"和"_blank"两个属性值，再打开一个新的页面时，控制当前页面是否在当前页面打开
-
-5、enctpy属性
-一般情况下不会用到，他是用来控制提交表单时的编码方式。
-
-(2)input标签
-
-</select><input type="类型">
-
-需要注意的是input标签都是单标签，即自闭和标签。
-
-input标签顾名思义，是用来输入信息的。标签中最重要的就是type属性，用来控制表单的类型。共有下面几种类型：
-
-type属性值 说明
-text 单行文本框
-password 密码文本框
-radio 单选框
-checkbox 多选框
-button 普通按钮
-submit 提交按钮
-reset 重置按钮
-file 上传文件
-
-1、单行文本框
-
-单行文本框type属性取值为"text"时，呈现出的是单行文本框，通常用于网页中填写用户名或是注册信息等等输入信息的文本框。
-
-<!DOCTYPE html> 
-<html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <form>
-            用户名：<input type="text">
-        </form>
-    </body>
-</html>
-
-效果如下：
-1-18
-
-当type取"text"值的时候有几个常用的属性：
-
-size属性
-maxlength属性
-placeholder属性
-value属性
-
-size属性
-
-控制文本框的长度，但是一般情况下都是后面再用css调整，而不是在input标签里直接写入。
-
-效果如下：
-1-19
-
-maxlength属性
-
-控制文本框中可输入的文字的最大长度，比如日常见到的输入电话，身份证号等。
-
-效果如下：
-1-20
-
-placeholder属性
-
-这个属性的取值将会显示在文本框中，但是当点击文本框输入信息时，提示文字就会消失。
-
-效果如下：
-1-21
-
-value属性
-
-给文本框加一个默认的值，与前边一个不同的时，这个value属性里边的值会直接输入在文本框里，而placeholder属性的值再输入值的时候会直接消失。
-
-效果如下：
-1-22
-
-2、密码文本框
-
-密码文本框的tpye属性取值为"password"，与普通的文本框基本一样，唯一一点不同的是，当你在密码文本框输入信息时，不会显示你所输入的信息。
-
-<!DOCTYPE html> 
-<html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <form>
-            密码：<input type="password">
-        </form>
-    </body>
-</html>
-
-效果如下;
-1-23
-
-至于其他的属性，与单行文本框完全通用，可以参考上面。
-
-3、单选框
-
-单选框的type属性取值为"radio"，单选框通常在调查问卷或是注册时会见到，比较常用。
-
-<!DOCTYPE html> 
-<html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <form>
-            最喜欢的水果：<br>
-            <input type="radio" name="friut" value="西瓜">西瓜
-            <input type="radio" name="friut" value="草莓">草莓
-            <input type="radio" name="friut" value="苹果">苹果
-        </form>
-    </body>
-</html>
-
-效果如下：
-1-24
-
-当type属性取值为"radio"时，效果为单选框，其中会用到一下属性：
-
-name属性
-value属性
-checked属性
-
-name属性
-
-这里的name属性和之前form标签中的不太一样，前边的name属性只是用来命名，后期可以通过JavaScript或是其他方式使用数据。而这里name属性主要是为了将单选的内容进行分组，什么意思呢，因为是单选框每一组选项只能选择一个选项，所以需要name属性对其进行分组，使得在name相同的一组中选择一个选项。如果name属性不同或是根本没有写name属性，则会出现可以同时选择多个选项的情况，所以这个属性是必须写的。
-
-value属性
-
-在这里value属性不同文本框中的value属性，因为是单选框所以，不会有默认的输入答案，但它也是单选框必须写的一个元素。从上面的示例可以看出每一个选项后边的文字并不是value属性里边的，而是">"后边的文字，所以说在表单中你的选择和对应选项其实是没有什么关系的，而value属性正式确定了这一关系，通常value的值是和选项的文字完全一样的。
-
-这样做的原因是，需要让你的选择可以被提取并使用，否则在你写的页面中无法答案确定你到底选择了什么。
-
-checked属性
-
-<input type="radio" name="friut" value="苹果" checked>苹果
-
-这个属性在这里就比较好理解了，就是给你的单选框一个默认值，当你打开页面后就会直接选择那个选项，在HTML5的版本，这个属性可以不用写属性值，全写是'checked="checked"'。
-
-4、复选框
-
-复选框的type属性取值为"checkbox"
-
-<!DOCTYPE html> 
-<html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <form>
-            喜欢的水果：<br>
-            <input type="checkbox" name="friut" value="西瓜">西瓜
-            <input type="checkbox" name="friut" value="草莓">草莓
-            <input type="checkbox" name="friut" value="苹果">苹果
-        </form>
-    </body>
-</html>
-
-效果如下：
-1-25
-
-至于替他属性，单选框的属性完全适用于多选框，两者唯一不同的就是，在分好组的情况下一个只能选择一个选项，一个可以多选。并且两者的选择框的图形也不一样，可以直接在图片上看到。
-
-checked属性表示默认，这也是一样，只不过是可以在多个标签下写。
-
-5、普通按钮
-
-普通按钮的type属性取值为"button"。
-
-<!DOCTYPE html> 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <script>
-            window.onload = function ()
-            {	
-                var oBtn = document.getElementById("baidu");
-                oBtn.onclick = function()
-                {	
-                    window.location.href="https://www.baidu.com";
-                }
-            }
-        </script>
-    </head>
-    <body>
-        <form>
-            <input type="button" id="baidu" value="按钮">			
-        </form>
-    </body>
-</html>
-
-效果如下：
-1-26
-
-这里的普通按钮通常用和JavaScript配合使用，来完成一些网页的交互。至于上面的代码属于JavaScript的范畴，原理为新建一个函数，通过捕获按钮的id，来建立两者的联系，最后跳转到百度的页面。目前不需要考虑。
-
-按钮的value属性则是在按钮上的提示信息。
-
-6、提交按钮
-
-提交按钮的type属性取值为"submit"。
-可以理解为特殊类型的普通按钮，在外观上和普通按钮没有任何区别。至于作用就是提交数据，和在form标签中的method、action
-等属性一起使用的，最终把form表单中的文本框，单选框等中的数据提交到相应的位置。
-
-7、重置按钮
-
-重置按钮的type属性取值为"reset"
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title></title>
-</head>
-<body>
-    <form method="post">
-        账号：<input type="text"><br>
-        密码：<input type="password"><br>
-        <input type="reset" value="重置">
-    </form>
-</body>
-</html>
-
-效果如下：
-1-27
-
-他唯一的作用就是将当前表单中的所有输入数据清空，比如如上图所示在将账号和密码输入完成后，点击重置按钮将会，你所输入的数据将会被清空，达到一个重置的作用。
-
-需要注意的是重置按钮只会重置当前表单中的数据，也就是在form标签中的，如果想要重置另一个form标签或是重置按钮在form标签外面，则不会重置数据。
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title></title>
-</head>
-<body>
-    <form>
-        <input type="button" value="普通按钮">
-        <input type="submit" value="提交按钮">
-        <input type="reset" value="重置按钮">
-    </form>
-</body>
-</html>
-
-效果如下：
-1-28
-
-这三种按钮在外观上不会有任何的不同，但是每一个按钮的功能都是不一样的，所以需要在合适的地方使用合适的按钮。
-
-8、上传文件
-
-上传文件的的type属性取值为"file"
-
-上传文件的功能通常用于邮箱，网盘等地方。但是这个功能通常是和后端挂钩的，目前不需要考虑。样式和按钮差不多，旁边会有你所选择的文件的提示。
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        <form>
-            <input type="file" value="上传文件">
-        </form>
-    </body>
-</html>
-
-效果如下：
-1-29
-
-(3)textarea标签
-
+<h4 id="1form标签"><a href="#1-form标签" class="headerlink" title="(1)form标签"></a>(1)form标签</h4><p>首先是form标签内部中可能用到的一些属性</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">&quot;表单名称&quot;</span> <span class="attr">method</span>=<span class="string">&quot;提交方式&quot;</span> <span class="attr">action</span>=<span class="string">&quot;提交地址&quot;</span> <span class="attr">target</span>=<span class="string">&quot;打开方式&quot;</span> <span class="attr">enctpy</span>=<span class="string">&quot;编码方式&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="1-name属性"><a href="#1、name属性" class="headerlink" title="1、name属性"></a>1、name属性</h5><p>用来区分各个表单，就是给你得每个表单去一个名字。和前边的id属性有点类似，只不过不一样的是：首先id的值是不能一样的，每个标签都是一个独一无二的名字，而name属性的值是可以一样的。</p>
+<h5 id="2-method属性"><a href="#2、method属性" class="headerlink" title="2、method属性"></a>2、method属性</h5><p>用来写提交的方式，属性值有两个，一个是”post”，另一个是”get”，但是一般使用的是”post”，因为安全性比较高</p>
+<h5 id="3-action属性"><a href="#3、action属性" class="headerlink" title="3、action属性"></a>3、action属性</h5><p>用于填写表单中数据提交的地址或是，一般情况下，这三个属性是配合着使用的。</p>
+<h5 id="4-target属性"><a href="#4、target属性" class="headerlink" title="4、target属性"></a>4、target属性</h5><p>用于写提交的方式在前边的a标签中提到过，和前边的用法完全一样，主要有”_self”和”_blank”两个属性值，再打开一个新的页面时，控制当前页面是否在当前页面打开</p>
+<h5 id="5-enctpy属性"><a href="#5、enctpy属性" class="headerlink" title="5、enctpy属性"></a>5、enctpy属性</h5><p>一般情况下不会用到，他是用来控制提交表单时的编码方式。</p>
+<h4 id="2input标签"><a href="#2-input标签" class="headerlink" title="(2)input标签"></a>(2)input标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;input type=&quot;类型&quot;/&gt;</span><br></pre></td></tr></table></figure>
+<p>需要注意的是input标签都是单标签，即自闭和标签。</p>
+<p>input标签顾名思义，是用来输入信息的。标签中最重要的就是type属性，用来控制表单的类型。共有下面几种类型：</p>
+<table>
+<thead>
+<tr>
+<th align="left">type属性值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">text</td>
+<td align="left">单行文本框</td>
+</tr>
+<tr>
+<td align="left">password</td>
+<td align="left">密码文本框</td>
+</tr>
+<tr>
+<td align="left">radio</td>
+<td align="left">单选框</td>
+</tr>
+<tr>
+<td align="left">checkbox</td>
+<td align="left">多选框</td>
+</tr>
+<tr>
+<td align="left">button</td>
+<td align="left">普通按钮</td>
+</tr>
+<tr>
+<td align="left">submit</td>
+<td align="left">提交按钮</td>
+</tr>
+<tr>
+<td align="left">reset</td>
+<td align="left">重置按钮</td>
+</tr>
+<tr>
+<td align="left">file</td>
+<td align="left">上传文件</td>
+</tr>
+</tbody></table>
+<h5 id="1-单行文本框"><a href="#1、单行文本框" class="headerlink" title="1、单行文本框"></a>1、单行文本框</h5><p>单行文本框type属性取值为”text”时，呈现出的是单行文本框，通常用于网页中填写用户名或是注册信息等等输入信息的文本框。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">			用户名：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：<br>1-18</p>
+<p>当type取”text”值的时候有几个常用的属性：</p>
+<ul>
+<li>size属性</li>
+<li>maxlength属性</li>
+<li>placeholder属性</li>
+<li>value属性</li>
+</ul>
+<h6 id="size属性"><a href="#size属性" class="headerlink" title="size属性"></a>size属性</h6><p>控制文本框的长度，但是一般情况下都是后面再用css调整，而不是在input标签里直接写入。</p>
+<p>效果如下：<br>1-19</p>
+<h6 id="maxlength属性"><a href="#maxlength属性" class="headerlink" title="maxlength属性"></a>maxlength属性</h6><p>控制文本框中可输入的文字的最大长度，比如日常见到的输入电话，身份证号等。</p>
+<p>效果如下：<br>1-20</p>
+<h6 id="placeholder属性"><a href="#placeholder属性" class="headerlink" title="placeholder属性"></a>placeholder属性</h6><p>这个属性的取值将会显示在文本框中，但是当点击文本框输入信息时，提示文字就会消失。</p>
+<p>效果如下：<br>1-21</p>
+<h6 id="value属性"><a href="#value属性" class="headerlink" title="value属性"></a>value属性</h6><p>给文本框加一个默认的值，与前边一个不同的时，这个value属性里边的值会直接输入在文本框里，而placeholder属性的值再输入值的时候会直接消失。</p>
+<p>效果如下：<br>1-22</p>
+<h5 id="2-密码文本框"><a href="#2、密码文本框" class="headerlink" title="2、密码文本框"></a>2、密码文本框</h5><p>密码文本框的tpye属性取值为”password”，与普通的文本框基本一样，唯一一点不同的是，当你在密码文本框输入信息时，不会显示你所输入的信息。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">			密码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下;<br>1-23</p>
+<p>至于其他的属性，与单行文本框完全通用，可以参考上面。</p>
+<h5 id="3-单选框"><a href="#3、单选框" class="headerlink" title="3、单选框"></a>3、单选框</h5><p>单选框的type属性取值为”radio”，单选框通常在调查问卷或是注册时会见到，比较常用。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">			最喜欢的水果：<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;friut&quot;</span> <span class="attr">value</span>=<span class="string">&quot;西瓜&quot;</span>&gt;</span>西瓜</span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;friut&quot;</span> <span class="attr">value</span>=<span class="string">&quot;草莓&quot;</span>&gt;</span>草莓</span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;friut&quot;</span> <span class="attr">value</span>=<span class="string">&quot;苹果&quot;</span>&gt;</span>苹果</span><br><span class="line">		<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：<br>1-24</p>
+<p>当type属性取值为”radio”时，效果为单选框，其中会用到一下属性：</p>
+<ul>
+<li>name属性</li>
+<li>value属性</li>
+<li>checked属性</li>
+</ul>
+<h6 id="name属性"><a href="#name属性" class="headerlink" title="name属性"></a>name属性</h6><p>这里的name属性和之前form标签中的不太一样，前边的name属性只是用来命名，后期可以通过JavaScript或是其他方式使用数据。而这里name属性主要是为了将单选的内容进行分组，什么意思呢，因为是单选框每一组选项只能选择一个选项，所以需要name属性对其进行分组，使得在name相同的一组中选择一个选项。如果name属性不同或是根本没有写name属性，则会出现可以同时选择多个选项的情况，所以这个属性是必须写的。</p>
+<h6 id="value属性"><a href="#value属性-1" class="headerlink" title="value属性"></a>value属性</h6><p>在这里value属性不同文本框中的value属性，因为是单选框所以，不会有默认的输入答案，但它也是单选框必须写的一个元素。从上面的示例可以看出每一个选项后边的文字并不是value属性里边的，而是”&gt;”后边的文字，所以说在表单中你的选择和对应选项其实是没有什么关系的，而value属性正式确定了这一关系，通常value的值是和选项的文字完全一样的。</p>
+<p>这样做的原因是，需要让你的选择可以被提取并使用，否则在你写的页面中无法答案确定你到底选择了什么。</p>
+<h6 id="checked属性"><a href="#checked属性" class="headerlink" title="checked属性"></a>checked属性</h6><blockquote>
+<p><input type="radio" name="friut" value="苹果" checked>苹果</p>
+</blockquote>
+<p>这个属性在这里就比较好理解了，就是给你的单选框一个默认值，当你打开页面后就会直接选择那个选项，在HTML5的版本，这个属性可以不用写属性值，全写是’checked&#x3D;”checked”‘。</p>
+<h5 id="4-复选框"><a href="#4、复选框" class="headerlink" title="4、复选框"></a>4、复选框</h5><p>复选框的type属性取值为”checkbox”</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">			喜欢的水果：<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;friut&quot;</span> <span class="attr">value</span>=<span class="string">&quot;西瓜&quot;</span>&gt;</span>西瓜</span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;friut&quot;</span> <span class="attr">value</span>=<span class="string">&quot;草莓&quot;</span>&gt;</span>草莓</span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;friut&quot;</span> <span class="attr">value</span>=<span class="string">&quot;苹果&quot;</span>&gt;</span>苹果</span><br><span class="line">		<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：<br>1-25</p>
+<p>至于替他属性，单选框的属性完全适用于多选框，两者唯一不同的就是，在分好组的情况下一个只能选择一个选项，一个可以多选。并且两者的选择框的图形也不一样，可以直接在图片上看到。</p>
+<p>checked属性表示默认，这也是一样，只不过是可以在多个标签下写。</p>
+<h5 id="5-普通按钮"><a href="#5、普通按钮" class="headerlink" title="5、普通按钮"></a>5、普通按钮</h5><p>普通按钮的type属性取值为”button”。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">			<span class="variable language_">window</span>.<span class="property">onload</span> = <span class="keyword">function</span> (<span class="params"></span>)</span></span><br><span class="line"><span class="language-javascript">			&#123;	</span></span><br><span class="line"><span class="language-javascript">				<span class="keyword">var</span> oBtn = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;baidu&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">				oBtn.<span class="property">onclick</span> = <span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="language-javascript">				&#123;	</span></span><br><span class="line"><span class="language-javascript">					<span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span>=<span class="string">&quot;https://www.baidu.com&quot;</span>;</span></span><br><span class="line"><span class="language-javascript">				&#125;</span></span><br><span class="line"><span class="language-javascript">			&#125;</span></span><br><span class="line"><span class="language-javascript">		</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">id</span>=<span class="string">&quot;baidu&quot;</span> <span class="attr">value</span>=<span class="string">&quot;按钮&quot;</span>&gt;</span>			</span><br><span class="line">		<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：<br>1-26</p>
+<p>这里的普通按钮通常用和JavaScript配合使用，来完成一些网页的交互。至于上面的代码属于JavaScript的范畴，原理为新建一个函数，通过捕获按钮的id，来建立两者的联系，最后跳转到百度的页面。目前不需要考虑。</p>
+<p>按钮的value属性则是在按钮上的提示信息。</p>
+<h5 id="6-提交按钮"><a href="#6、提交按钮" class="headerlink" title="6、提交按钮"></a>6、提交按钮</h5><p>提交按钮的type属性取值为”submit”。<br>可以理解为特殊类型的普通按钮，在外观上和普通按钮没有任何区别。至于作用就是提交数据，和在form标签中的method、action<br>等属性一起使用的，最终把form表单中的文本框，单选框等中的数据提交到相应的位置。</p>
+<h5 id="7-重置按钮"><a href="#7、重置按钮" class="headerlink" title="7、重置按钮"></a>7、重置按钮</h5><p>重置按钮的type属性取值为”reset”</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span>&gt;</span></span><br><span class="line">        账号：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">        密码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;reset&quot;</span> <span class="attr">value</span>=<span class="string">&quot;重置&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：<br>1-27</p>
+<p>他唯一的作用就是将当前表单中的所有输入数据清空，比如如上图所示在将账号和密码输入完成后，点击重置按钮将会，你所输入的数据将会被清空，达到一个重置的作用。</p>
+<p>需要注意的是重置按钮只会重置当前表单中的数据，也就是在form标签中的，如果想要重置另一个form标签或是重置按钮在form标签外面，则不会重置数据。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;普通按钮&quot;</span> /&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;提交按钮&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;reset&quot;</span> <span class="attr">value</span>=<span class="string">&quot;重置按钮&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：<br>1-28</p>
+<p>这三种按钮在外观上不会有任何的不同，但是每一个按钮的功能都是不一样的，所以需要在合适的地方使用合适的按钮。</p>
+<h5 id="8-上传文件"><a href="#8、上传文件" class="headerlink" title="8、上传文件"></a>8、上传文件</h5><p>上传文件的的type属性取值为”file”</p>
+<p>上传文件的功能通常用于邮箱，网盘等地方。但是这个功能通常是和后端挂钩的，目前不需要考虑。样式和按钮差不多，旁边会有你所选择的文件的提示。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	    <span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">value</span>=<span class="string">&quot;上传文件&quot;</span> /&gt;</span></span><br><span class="line">	    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：<br>1-29</p>
+<h4 id="3textarea标签"><a href="#3-textarea标签" class="headerlink" title="(3)textarea标签"></a>(3)textarea标签</h4><blockquote>
 <textarea rows="行数" cols="列数" placeholder="提示文字" maxlength="最大字数"></textarea>
-
+</blockquote>
 <p>textarea标签表示的是多行文本框，和input标签下的两种文本框大同小异</p>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        <form>
-            <textarea rows="10" cols="20" placeholder="提示文字" maxlength="20"></textarea>
-        </form>
-    </body>
-</html>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">textarea</span> <span class="attr">rows</span>=<span class="string">&quot;10&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;20&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;提示文字&quot;</span> <span class="attr">maxlength</span>=<span class="string">&quot;20&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>效果如下：<br>1-30</p>
 <p>不同的是这里多了rows属性和cols属性。分别控制多行文本框的大小和每一行的输入的最大字数。placeholder属性和maxlength属性和前边的文本框完全一样，分别可以控制文本框的提示文字和所输入的最大字数。</p>
 <p>需要注意的是这里的textarea标签是双标签，而前面的两种文本框–input标签是单标签。</p>
-<p>(4)select标签</p>
-<p>select标签表示下拉列表。</p>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title></title>
-</head>
-<body>
-    <form>
-        请选择你的大学：<br>
-        <select>
-            <option>清华大学</option>
-            <option>北京大学</option>
-            <option>北京理工大学</option>
-            <option>北京工业大学</option>
-            <option>北京科技大学</option>
-        </select>
-    </form>
-</body>
-</html>
+<h4 id="4select标签"><a href="#4-select标签" class="headerlink" title="(4)select标签"></a>(4)select标签</h4><p>select标签表示下拉列表。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">		请选择你的大学：<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">select</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span>&gt;</span>清华大学<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span>&gt;</span>北京大学<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span>&gt;</span>北京理工大学<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span>&gt;</span>北京工业大学<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span>&gt;</span>北京科技大学<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>效果如下：<br>1-31</p>
 <p>这里还需要另一个标签–option标签。他的结构类似于表格，一个select标签是一个下拉列表，一个option标签是一个选项。</p>
 <p>两个标签分别有两个常用的属性</p>
-<p>select标签</p>
+<h5 id="select标签"><a href="#select标签" class="headerlink" title="select标签"></a>select标签</h5><blockquote>
 <p><select multiple="multiple" size="显示的数量（整数）"></select></p>
+</blockquote>
 <p>multiple属性可以是下拉列表可以多选，但是需要CTRL+鼠标左键来操作。但是同时也会改变下拉列表的样式。同时这个属性也可以直接简写为multiple，和前边的checked属性原理是一样的。</p>
 <p>效果如下：<br>1-32</p>
 <p>size属性是用控制下拉列表的长度，比如像上图改为可多选后现实的长度就会默认为4格，而size属性的取值就是最后所显示的长度。</p>
 <p>仔细观察，修改完属性值后下拉列表的像样式改变了，只要是设置了可多选，或是size的属性值不为1，则最后的样子都是如上图的可以滑动的列表的样子。</p>
-<p>option标签</p>
+<h5 id="option标签"><a href="#option标签" class="headerlink" title="option标签"></a>option标签</h5><blockquote>
 <option selected="selected" value="属性值">选项</option>
-
+</blockquote>
 <p>selected类似于之前的checked属性，是给下拉列表一个默认值。同时它也可以简写和checked属性原理一样。</p>
 <p>value属性则是前边单选框中的value属性意义一样，是为了后边的JavaScript对下拉列表可以进行数据的处理。</p>
 ]]></content>
