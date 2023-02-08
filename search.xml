@@ -68,7 +68,7 @@
 <p>这对标签唯一的作用就是定义网页的标题。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span>网页标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span>      </span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span>文本内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/../img/1-1.png" alt="avatar"></p>
+<p><img src="/1-1.png" alt="avatar"></p>
 <p>如上图所示，title标签所展示的标题是整个界面的标题，而&lt;body&gt;标签中&lt;p&gt; 标签中的内容时显示在页面上的。<br>这个&lt;p&gt;大家可能有些陌生，它表示的是一种文本，后续会讲到。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">属性名</span>=<span class="string">“名称”</span> <span class="attr">content</span>=<span class="string">”内容”</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <p>这个标签是用来定义网页的一些特殊信息，例如页面关键字、页面描述等。但是它并不能显示出来，这是给搜索引擎看的。</p>
@@ -526,5 +526,10 @@
       <tags>
         <tag>前端</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>数据结构笔记</title>
+    <url>/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
