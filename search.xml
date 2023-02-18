@@ -540,8 +540,8 @@
       </tags>
   </entry>
   <entry>
-    <title>数据结构与算法笔记</title>
-    <url>/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</url>
+    <title>数据结构笔记</title>
+    <url>/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="一-绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>随着应用程序变得越来越复杂和数据越来越丰富，几百万、几十亿甚至几百亿的数据就会出现，而对这么大对数据进行搜索、插入或者排序等的操作就越来越慢，数据结构就是用来解决这些问题的。</p>
 <span id="more"></span>
 
@@ -617,5 +617,10 @@
       <tags>
         <tag>数据结构</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>算法笔记--查找与排序</title>
+    <url>/2023/02/18/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0--%E6%9F%A5%E6%89%BE%E4%B8%8E%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
