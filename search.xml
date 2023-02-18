@@ -585,8 +585,32 @@
 <li>高效</li>
 </ul>
 <h3 id="2算法的性能分析"><a href="#2-算法的性能分析" class="headerlink" title="(2)算法的性能分析"></a>(2)算法的性能分析</h3><p>一个算法的好坏很大程度上取决于算法的效率，也就是算法索取要的计算机资源–时间和空间资源。</p>
-<h4 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h4><p>$\lim\limits_{x\rightarrow\infty}\frac{1}{x}$</p>
-]]></content>
+<h4 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h4><p>时间复杂度就是通过定量的计算某算法的执行时间。一个语句实行所消耗的时间，是算法中所有语句执行时间之和，而每条语句的执行时间是该语句执行一次所使用的时间与该语句重复执行次数的乘积。一条语句重复执行次数称为该语句的频数。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">sum = <span class="number">0</span>;		<span class="comment">//语句频度：1</span></span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>; i&lt;=n; i++)&#123;		<span class="comment">//语句频度：n+1</span></span><br><span class="line">	sum+=n;		<span class="comment">//语句频度：n</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如上述代码，计算器时间复杂度为：T(n)&#x3D;1+(n+1)+n&#x3D;2n+2<br>但是因为如此去算每一条语句非常麻烦，所以这时可以忽略掉依赖于机器的常量，然后关注运行时间的增长而不是实际的运行时间，这样就可以得到渐进时间复杂度。<br>所以在计算时间复杂度时，可以<strong>忽略所有低次幂和高次幂的系数</strong>，则上述语句时间复杂度为T(n)&#x3D;2n+2&#x3D;<em>O</em>(n)</p>
+</blockquote>
+<h4 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h4><p>算法的空间复杂度是指算法运行从开始到结束所需要的存储量。</p>
+<h1 id="二-线性表"><a href="#二、线性表" class="headerlink" title="二、线性表"></a>二、线性表</h1><p>线性表中数据元素之间是线性关系，也就是一对一的关系，线性表嗯可以有顺序和链式两种存储结构，也成为顺序表和链表。</p>
+<h2 id="1-线性表的基本概念"><a href="#1、线性表的基本概念" class="headerlink" title="1、线性表的基本概念"></a>1、线性表的基本概念</h2><blockquote>
+<p>线性表(<em>Linear List</em>)是数据结构中最常用、最简单的结构。在线性表中，数据关系是一对一的关系，即他的数据元素是前后相连的；并且线性表中的数据元素的类型都相同<br>线性表是数据元素的有序集合，其基本特征如下：</p>
+</blockquote>
+<ul>
+<li>必存在唯一的”第一元素”</li>
+<li>比存在唯一的”最后元素”</li>
+<li>除第一元素之外的元素均有唯一的”直接前驱”</li>
+<li>除最后元素之外的元素均有唯一的”直接后继”</li>
+</ul>
+<h2 id="2-线性表的顺序存储结构及其实现"><a href="#2、线性表的顺序存储结构及其实现" class="headerlink" title="2、线性表的顺序存储结构及其实现"></a>2、线性表的顺序存储结构及其实现</h2><h3 id="1线性表的顺序存储结构"><a href="#1-线性表的顺序存储结构" class="headerlink" title="(1)线性表的顺序存储结构"></a>(1)线性表的顺序存储结构</h3><p>在计算机中存储线性表，一种最简单的方法就是顺序存储。这种方式的特点就是：<strong>线性表中所有元素所占用的存储空间是连续的</strong>，线性表中的元素依次存储在这个空间内，逻辑相邻的元素的存储位置也是相邻的</p>
+<blockquote>
+<p>所以第i个元素的位置可以<strong>通过<em>LOC(a_i)&#x3D;LOC(a_0)+i*L</em>来计算</strong>，其中<em>L</em>表示每个元素所占用的存储单元。<br>当顺序表中存储容量不够时，解决数据一处的方法就是申请一个更大容量的数组并进行数组元素的复制。</p>
+</blockquote>
+<h3 id="2顺序表类的设计与实现"><a href="#2-顺序表类的设计与实现" class="headerlink" title="(2)顺序表类的设计与实现"></a>(2)顺序表类的设计与实现</h3><h4 id="查找元素"><a href="#查找元素" class="headerlink" title="查找元素"></a>查找元素</h4><p>在顺序表中查找是否存在与待查元素相同的数据元素<br>现有线性表(23,75,41,38,54,62)，存储长度为7的一维数组空间中，现查找元素38。<br><img src="/../img/2-3.png" alt="avatar"></p>
+<p>思路：将待查元素和春旭表中元素进行一一比较，如找到相同元素则返回该元素的位置，查找成功；如未找到相同的元素则返回-1，查找不成功。</p>
+<p>实现代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">indexof</span><span class="params">(T key)</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="built_in">this</span>.len; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="keyword">if</span> (key.equals(<span class="built_in">this</span>.value[i])) &#123;</span><br><span class="line">            <span class="keyword">return</span> a-<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        a++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="插入元素"><a href="#插入元素" class="headerlink" title="插入元素"></a>插入元素</h4>]]></content>
       <categories>
         <category>学习笔记</category>
       </categories>
