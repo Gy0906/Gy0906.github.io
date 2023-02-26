@@ -152,18 +152,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -209,7 +209,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2023/02/18/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0--%E6%9F%A5%E6%89%BE%E4%B8%8E%E6%8E%92%E5%BA%8F/">
+    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2023/02/21/4-hexo%20+%20next%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/lufei.jpg">
@@ -227,7 +227,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/02/18/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0--%E6%9F%A5%E6%89%BE%E4%B8%8E%E6%8E%92%E5%BA%8F/" class="post-title-link" itemprop="url">算法笔记--查找与排序</a>
+          <a href="/2023/02/21/4-hexo%20+%20next%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" class="post-title-link" itemprop="url">hexo + next博客无法显示数学公式</a>
         </h2>
 
         <div class="post-meta-container">
@@ -237,8 +237,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2023-02-18 17:16:45" itemprop="dateCreated datePublished" datetime="2023-02-18T17:16:45+08:00">2023-02-18</time>
+      <time title="创建时间：2023-02-21 13:04:27 / 修改时间：17:29:14" itemprop="dateCreated datePublished" datetime="2023-02-21T13:04:27+08:00">2023-02-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/" itemprop="url" rel="index"><span itemprop="name">经验总结</span></a>
+        </span>
     </span>
 
   
@@ -251,7 +261,130 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
+          <h3 id="问题"><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><p>写博客时会需要一些数学公式，也就是在markdown语言中用<code>&quot;$&quot;或&quot;$$&quot;</code>包住的公式块，但有时最终在博客中公式以源码的方式呈现，无法显示想打出的公式。</p>
+<h3 id="解决方案"><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><h4 id="1-检查博客中主题配置文件是否将mathjax的选项打开"><a href="#1、检查博客中主题配置文件是否将mathjax的选项打开" class="headerlink" title="1、检查博客中主题配置文件是否将mathjax的选项打开"></a>1、检查博客中主题配置文件是否将mathjax的选项打开</h4><p>1、<code>锁定位置&quot;Hexo\themes\next\_config.yml&quot;</code></p>
+<p>进入配置文件后<code>Ctrl+F</code>然后搜索mathjax，将enable选项改为true。</p>
+<p><img src="/../img/4-1.png"></p>
+<p>2、然后在文章的<code>Front-matter</code>里打开<code>mathjax</code>。</p>
+<p><img src="/../img/4-2.png"></p>
+<h4 id="2-检查使用的markdown语言是否有错误"><a href="#2、检查使用的markdown语言是否有错误" class="headerlink" title="2、检查使用的markdown语言是否有错误"></a>2、检查使用的markdown语言是否有错误</h4><blockquote>
+<p>因为使用hexo搭建的博客，虽然上传时使用的是markdown语言，但是通常是通过读取md文件，然后在转化为HTML页面，最终呈现在网页上。</p>
+</blockquote>
+<p>所以需要注意一下问题：</p>
+<ul>
+<li><p>一些md语言与HTML语言有冲突的地方就不能使用。还有一些md编辑器会有一些特殊的语法，或是插件中的语法，最终也会导致显示不出来公式，比如语义冲突的符号还包括<code>*, &#123;, &#125;, \\</code>等</p>
+</li>
+<li><p>尽量避免直接使用符号来写公式，比如<code>~&quot;下标&quot;~</code>、<code>^&quot;上标&quot;^</code>。</p>
+</li>
+<li><p>还有要注意公式块中不能出现任何错误，包括每个符号的字母和括号等等。</p>
+</li>
+<li><p>md语言中是可以和HTML标签通用的，但是公式块中不能任何标签。</p>
+</li>
+</ul>
+<h4 id="3-更换hexo中的渲染引擎"><a href="#3、更换hexo中的渲染引擎" class="headerlink" title="3、更换hexo中的渲染引擎"></a>3、更换hexo中的渲染引擎</h4><blockquote>
+<p>如果上述情况没有问题，可以更换一下渲染引擎，Hexo 默认使用 hexo-renderer-marked 引擎渲染网页，该引擎会把一些特殊的 markdown 符号转换为相应的 html 标签。</p>
+</blockquote>
+<p>1、更换 Hexo 的 markdown 渲染引擎，hexo-renderer-kramed 引擎是在默认的渲染引擎 hexo-renderer-marked 的基础上修改了一些 bug ，两者比较接近，也比较轻量级。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure>
+
+<p>2、<code>锁定hexo\node_modules\kramed\lib\rules\inline.js</code></p>
+<p>把第11行的 escape 变量的值做相应的修改，这一步是在原基础上取消了对,{,}的转义：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br></pre></td></tr></table></figure>
+
+<p>第20行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure>
+
+<p>3重新启动hexo（先clean再generate）。</p>
+<h3 id="markdown常用公式符号"><a href="#markdown常用公式符号" class="headerlink" title="markdown常用公式符号"></a>markdown常用公式符号</h3><table>
+<thead>
+<tr>
+<th>形式</th>
+<th>实际效果</th>
+<th>语法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>上标</td>
+<td>$x^2$</td>
+<td>x^2</td>
+</tr>
+<tr>
+<td>下标</td>
+<td>$H_2O$</td>
+<td>H_2O</td>
+</tr>
+<tr>
+<td>平均值</td>
+<td>$\overline{a}$</td>
+<td>\overline{a}</td>
+</tr>
+<tr>
+<td>分式</td>
+<td>$\frac{1}{2}$</td>
+<td>\frac{1}{2}</td>
+</tr>
+<tr>
+<td>根式</td>
+<td>$\sqrt{2}$</td>
+<td>\sqrt{2}</td>
+</tr>
+<tr>
+<td>求和</td>
+<td>$\stackrel{n}{\sum_{i&#x3D;1}}i&#x3D;\frac{1}{2}(n+1)$</td>
+<td>\stackrel{n}{\sum_{i&#x3D;1}}i&#x3D;\frac{1}{2}(n+1)</td>
+</tr>
+<tr>
+<td>无穷</td>
+<td>$\infty$</td>
+<td>\infty</td>
+</tr>
+<tr>
+<td>箭头</td>
+<td>$\to$</td>
+<td>\to</td>
+</tr>
+<tr>
+<td>极限</td>
+<td>$\displaystyle \lim_{x \to \infty}{\frac{1}{x}}$</td>
+<td>\displaystyle \lim_{x \to \infty}{\frac{1}{x}}</td>
+</tr>
+<tr>
+<td>微积分</td>
+<td>$\int^{\infty}_{0}{xdx}$</td>
+<td>\int^{\infty}_{0}{xdx}</td>
+</tr>
+<tr>
+<td>向上取整</td>
+<td>$\lceil \frac{x}{2} \rceil$</td>
+<td>\lceil \frac{x}{2} \rceil</td>
+</tr>
+<tr>
+<td>向下取整</td>
+<td>$\lfloor x \rfloor$</td>
+<td>\lfloor x \rfloor</td>
+</tr>
+<tr>
+<td>对数函数</td>
+<td>$\log_2n$、$\ln e$、$\lg 10$</td>
+<td>\log_2n、\ln e、\lg 10</td>
+</tr>
+<tr>
+<td>大于等于</td>
+<td>$\geq$</td>
+<td>\geq</td>
+</tr>
+<tr>
+<td>小于等于</td>
+<td>$\leq$</td>
+<td>\leq</td>
+</tr>
+<tr>
+<td>不等于</td>
+<td>$\neq$</td>
+<td>\neq</td>
+</tr>
+</tbody></table>
+
       
     </div>
 
@@ -277,7 +410,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2023/02/21/4-hexo%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/lufei.jpg">
@@ -295,7 +428,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">数据结构笔记</a>
+          <a href="/2023/02/21/4-hexo%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" class="post-title-link" itemprop="url">hexo博客无法显示数学公式</a>
         </h2>
 
         <div class="post-meta-container">
@@ -305,15 +438,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2023-02-08 21:27:25" itemprop="dateCreated datePublished" datetime="2023-02-08T21:27:25+08:00">2023-02-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-02-18 17:15:39" itemprop="dateModified" datetime="2023-02-18T17:15:39+08:00">2023-02-18</time>
+      <time title="创建时间：2023-02-21 13:04:27 / 修改时间：23:21:01" itemprop="dateCreated datePublished" datetime="2023-02-21T13:04:27+08:00">2023-02-21</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -321,7 +448,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+          <a href="/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/" itemprop="url" rel="index"><span itemprop="name">经验总结</span></a>
         </span>
     </span>
 
@@ -335,10 +462,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>随着应用程序变得越来越复杂和数据越来越丰富，几百万、几十亿甚至几百亿的数据就会出现，而对这么大对数据进行搜索、插入或者排序等的操作就越来越慢，数据结构就是用来解决这些问题的。</p>
+          <h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><p>写博客时会需要一些数学公式，也就是在markdown语言中用<code>&quot;$&quot;或&quot;$$&quot;</code>包住的公式块，但有时最终在博客中公式以源码的方式呈现，无法显示想打出的公式。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/#more" rel="contents">
+              <a class="btn" href="/2023/02/21/4-hexo%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -369,7 +496,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2022/12/31/HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2023/02/18/3-%E6%8E%92%E5%BA%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/lufei.jpg">
@@ -387,7 +514,282 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/31/HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">HTML入门笔记</a>
+          <a href="/2023/02/18/3-%E6%8E%92%E5%BA%8F/" class="post-title-link" itemprop="url">排序</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-02-18 17:16:45" itemprop="dateCreated datePublished" datetime="2023-02-18T17:16:45+08:00">2023-02-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-21 18:19:39" itemprop="dateModified" datetime="2023-02-21T18:19:39+08:00">2023-02-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="排序的基本概念"><a href="#排序的基本概念" class="headerlink" title="排序的基本概念"></a>排序的基本概念</h1><p>排序时将一组数据元素(或记录)从任意序列排列成一个按关键字有序的序列。而排序的目的往往是为了更高效的的进行查找，查找有序的序列可以大幅度的提升计算机对数据处理的工作效率。</p>
+<p>在众多排序方法中，要衡量一个排序方法的优劣，通常要考虑3个方面：</p>
+<ul>
+<li><strong>时间效率</strong>–排序速度，通常用时间复杂度来表示，时间复杂度由算法执行中元素比较次数和移动次数而定。</li>
+<li><strong>空间效率</strong>–排序中占内存辅助空间的大小，通常用空间复杂度来表示。</li>
+<li><strong>稳定性</strong>–排序是否能保持原来的一些顺序关系，即若两个记录A和B的关键字值相等，但排序后A、B的先后次序宝石不变，则称这种算法是稳定的。</li>
+</ul>
+<h1 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h1>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2023/02/18/3-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/lufei.jpg">
+      <meta itemprop="name" content="回幼儿园当学霸">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="gy0906.blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | gy0906.blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/02/18/3-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">排序算法笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-02-18 17:16:45" itemprop="dateCreated datePublished" datetime="2023-02-18T17:16:45+08:00">2023-02-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-25 00:49:39" itemprop="dateModified" datetime="2023-02-25T00:49:39+08:00">2023-02-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="排序的基本概念"><a href="#排序的基本概念" class="headerlink" title="排序的基本概念"></a>排序的基本概念</h2><p>排序时将一组数据元素(或记录)从任意序列排列成一个按关键字有序的序列。而排序的目的往往是为了更高效的的进行查找，查找有序的序列可以大幅度的提升计算机对数据处理的工作效率。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/02/18/3-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2023/02/08/2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/lufei.jpg">
+      <meta itemprop="name" content="回幼儿园当学霸">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="gy0906.blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | gy0906.blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/02/08/2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">数据结构笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-02-08 21:27:25" itemprop="dateCreated datePublished" datetime="2023-02-08T21:27:25+08:00">2023-02-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-21 18:20:03" itemprop="dateModified" datetime="2023-02-21T18:20:03+08:00">2023-02-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>随着应用程序变得越来越复杂和数据越来越丰富，几百万、几十亿甚至几百亿的数据就会出现，而对这么大对数据进行搜索、插入或者排序等的操作就越来越慢，数据结构就是用来解决这些问题的。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/02/08/2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2022/12/31/1-HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/lufei.jpg">
+      <meta itemprop="name" content="回幼儿园当学霸">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="gy0906.blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | gy0906.blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/12/31/1-HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">HTML入门笔记</a>
         </h2>
 
         <div class="post-meta-container">
@@ -405,7 +807,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-02-09 22:52:47" itemprop="dateModified" datetime="2023-02-09T22:52:47+08:00">2023-02-09</time>
+      <time title="修改时间：2023-02-24 16:28:35" itemprop="dateModified" datetime="2023-02-24T16:28:35+08:00">2023-02-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -430,7 +832,7 @@
           <h1 id="一、HTML介绍："><a href="#一、HTML介绍：" class="headerlink" title="一、HTML介绍："></a>一、HTML介绍：</h1><p>Hyper Text Markup Language（超文本标记语言），他是属于一种网页的标准语言，但是不算是一种编程语言，而是一种Markup Language，即标记语言。它是属于前端开发的三大核心技术之一，另外两项是CSS和JavaScript。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022/12/31/HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/#more" rel="contents">
+              <a class="btn" href="/2022/12/31/1-HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -511,6 +913,12 @@
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 

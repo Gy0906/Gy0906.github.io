@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>HTML入门笔记</title>
-    <url>/2022/12/31/HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</url>
+    <url>/2022/12/31/1-HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="一-html介绍"><a href="#一、HTML介绍：" class="headerlink" title="一、HTML介绍："></a>一、HTML介绍：</h1><p>Hyper Text Markup Language（超文本标记语言），他是属于一种网页的标准语言，但是不算是一种编程语言，而是一种Markup Language，即标记语言。它是属于前端开发的三大核心技术之一，另外两项是CSS和JavaScript。</p>
 <span id="more"></span>
 <p><font size="5">HTML、CSS、JavaScript三者有何区别？？</font></p>
@@ -41,10 +41,15 @@
 <td align="left">HTML5是公认的下一代Web语言，极大地提升了Web在富媒体、富内容和富应用等方面的能力，被喻为终将改变移动互联网的重要推手。Internet Explorer 8及以前的版本不支持。</td>
 </tr>
 </tbody></table>
-<h1 id="二-html基本结构"><a href="#二、HTML基本结构：" class="headerlink" title="二、HTML基本结构："></a>二、HTML基本结构：</h1><p>在学习基本标签之前，我们先要认识一下html文件的基本结构。</p>
+<h1 id="二-html基本结构"><a href="#二、HTML基本结构：" class="headerlink" title="二、HTML基本结构："></a>二、HTML基本结构：</h1><p>首先是html文件的基本结构。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span>   </span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>这就是html最核心的结构，不管什么样的网页都是有着几部分构成。这其中的&lt;&gt;我们叫做标签，或者叫做元素。当然我们会发现它们基本上是成对出现的，例如&lt;head&gt;表示head这部分的开始，而&lt;&#x2F;head&gt;表示结束，至于每个标签的含义，下面我们来学习。</p>
+<blockquote>
+<p>这就是html最核心的结构，不管什么样的网页都是由这几部分构成。这其中的&lt;&gt;叫做标签，或者叫做元素。</p>
+<p><strong>一般情况下他们都是成对出现的</strong>，例如&lt;head&gt;表示head这部分的开始，而&lt;&#x2F;head&gt;表示结束，至于每个标签的含义，下面我们来学习。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> </span><br></pre></td></tr></table></figure>
+
 <p>这是文档声明，这里表示一个html页面，至于含义，可以看作 DOC TYPE——document type，即文件类型。这是每一个网页必要的一部分，必须要写的。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>这表示页面的开始和结束，也就是要在这一对标签内书写你网页的所有内容</p>
@@ -52,8 +57,7 @@
 <p>这一对标签表示网页的“头部”，像是添加一个页面标题、定时刷新或是加入外部文件，需要在这一对标签里书写，至于里面的详细内容后面会介绍到。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>这一对标签表示网页的“身体”，用于网页内容的编写，例如在网页中你所看到的文字，表格或是各种按钮，都是在这一对标签之中。</p>
-<h1 id="三-html基本标签"><a href="#三、HTML基本标签：" class="headerlink" title="三、HTML基本标签："></a>三、HTML基本标签：</h1><p>有了对html整体结构的一个认识，下面来介绍每对标签中的详细内容。</p>
-<h2 id="1-head标签"><a href="#1、head标签：" class="headerlink" title="1、head标签："></a>1、head标签：</h2><p>在这一对标签内的子标签都是比较特殊的，内容相对来说比较简单，也比较枯燥，知识点也比较少，所以放在了前面，至于这一块的内容，我们只需要了解这些子标签，以及他们的作用就好了。如果实在记不住也没有关系，忘记的时候再去查询就好了，这一块的知识本就不是一次性就都能记住的，反复的查看，记忆会更深，学的也会更扎实。</p>
+<h1 id="三-html基本标签"><a href="#三、HTML基本标签：" class="headerlink" title="三、HTML基本标签："></a>三、HTML基本标签：</h1><h2 id="1-head标签"><a href="#1、head标签：" class="headerlink" title="1、head标签："></a>1、head标签：</h2><p>在这一对标签内的子标签都是比较特殊的，内容相对来说比较简单，也比较枯燥，知识点也比较少，所以放在了前面，至于这一块的内容，我们只需要了解这些子标签，以及他们的作用就好了。如果实在记不住也没有关系，忘记的时候再去查询就好了，这一块的知识本就不是一次性就都能记住的，反复的查看，记忆会更深，学的也会更扎实。</p>
 <p>head标签有如下几个子标签：</p>
 <ul>
 <li>title标签</li>
@@ -536,12 +540,12 @@
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>前端</tag>
+        <tag>前端 - HTML</tag>
       </tags>
   </entry>
   <entry>
     <title>数据结构笔记</title>
-    <url>/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/</url>
+    <url>/2023/02/08/2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="一-绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>随着应用程序变得越来越复杂和数据越来越丰富，几百万、几十亿甚至几百亿的数据就会出现，而对这么大对数据进行搜索、插入或者排序等的操作就越来越慢，数据结构就是用来解决这些问题的。</p>
 <span id="more"></span>
 
@@ -567,7 +571,7 @@
 </blockquote>
 <h3 id="3抽象数据类型"><a href="#3-抽象数据类型" class="headerlink" title="(3)抽象数据类型"></a>(3)抽象数据类型</h3><p>抽象数据类型(<em>Abstract Data Type, ADT</em>)是指一个数学模型以及定义在该模型上的一组操作。抽象数据类型的定义取决与他的一组逻辑特性，而与其在计算机内部如何表示和实现无关，即<strong>不论其内部结构如何改变，只要他的数学特性不变，都不影响其外部的使用</strong>。其可用三元组来表示：</p>
 <blockquote>
-<p>ADT&#x3D;(D,S,P)<br>其中D是数据对象；S是D上的关系集；P是D上的操作集。</p>
+<p>ADT&#x3D;(D,S,P)<br>其中<strong>D是数据对象；S是D上的关系集；P是D上的操作集</strong>。</p>
 </blockquote>
 <h2 id="3-算法的概念和性能分析"><a href="#3、算法的概念和性能分析" class="headerlink" title="3、算法的概念和性能分析"></a>3、算法的概念和性能分析</h2><h3 id="1算法的定义"><a href="#1-算法的定义" class="headerlink" title="(1)算法的定义"></a>(1)算法的定义</h3><p>算法(<em>Algorithm</em>)是对特定问题求解步骤的一种表述，是指令的有序序列。其中每一条指令表示一个或多个操作。<br>一个算法有以下特性： </p>
 <ul>
@@ -605,7 +609,7 @@
 <blockquote>
 <p>所以第i个元素的位置可以<strong>通过<em>LOC(a_i)&#x3D;LOC(a_0)+i*L</em>来计算</strong>，其中<em>L</em>表示每个元素所占用的存储单元。<br>当顺序表中存储容量不够时，解决数据一处的方法就是申请一个更大容量的数组并进行数组元素的复制。</p>
 </blockquote>
-<h3 id="2顺序表类的设计与实现"><a href="#2-顺序表类的设计与实现" class="headerlink" title="(2)顺序表类的设计与实现"></a>(2)顺序表类的设计与实现</h3><h4 id="查找元素"><a href="#查找元素" class="headerlink" title="查找元素"></a>查找元素</h4><p>在顺序表中查找是否存在与待查元素相同的数据元素<br>现有线性表(23,75,41,38,54,62)，存储长度为7的一维数组空间中，现查找元素38。<br><img src="/../img/2-3.png" alt="avatar"></p>
+<h3 id="2顺序表类的设计与实现"><a href="#2-顺序表类的设计与实现" class="headerlink" title="(2)顺序表类的设计与实现"></a>(2)顺序表类的设计与实现</h3><h4 id="查找元素"><a href="#查找元素" class="headerlink" title="查找元素"></a>查找元素</h4><p>在顺序表中查找是否存在与待查元素相_同的_数据元素<br>现有线性表(23,75,41,38,54,62)，存储长度为7的一维数组空间中，现查找元素38。<br><img src="/../img/2-3.png" alt="avatar"></p>
 <p>思路：将待查元素和春旭表中元素进行一一比较，如找到相同元素则返回该元素的位置，查找成功；如未找到相同的元素则返回-1，查找不成功。</p>
 <p>实现代码：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">indexof</span><span class="params">(T key)</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="built_in">this</span>.len; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="keyword">if</span> (key.equals(<span class="built_in">this</span>.value[i])) &#123;</span><br><span class="line">            <span class="keyword">return</span> a-<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        a++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -619,8 +623,383 @@
       </tags>
   </entry>
   <entry>
-    <title>算法笔记--查找与排序</title>
-    <url>/2023/02/18/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0--%E6%9F%A5%E6%89%BE%E4%B8%8E%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[]]></content>
+    <title>排序</title>
+    <url>/2023/02/18/3-%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="排序的基本概念"><a href="#排序的基本概念" class="headerlink" title="排序的基本概念"></a>排序的基本概念</h1><p>排序时将一组数据元素(或记录)从任意序列排列成一个按关键字有序的序列。而排序的目的往往是为了更高效的的进行查找，查找有序的序列可以大幅度的提升计算机对数据处理的工作效率。</p>
+<p>在众多排序方法中，要衡量一个排序方法的优劣，通常要考虑3个方面：</p>
+<ul>
+<li><strong>时间效率</strong>–排序速度，通常用时间复杂度来表示，时间复杂度由算法执行中元素比较次数和移动次数而定。</li>
+<li><strong>空间效率</strong>–排序中占内存辅助空间的大小，通常用空间复杂度来表示。</li>
+<li><strong>稳定性</strong>–排序是否能保持原来的一些顺序关系，即若两个记录A和B的关键字值相等，但排序后A、B的先后次序宝石不变，则称这种算法是稳定的。</li>
+</ul>
+<h1 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h1>]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo + next博客无法显示数学公式</title>
+    <url>/2023/02/21/4-hexo%20+%20next%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</url>
+    <content><![CDATA[<h3 id="问题"><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><p>写博客时会需要一些数学公式，也就是在markdown语言中用<code>&quot;$&quot;或&quot;$$&quot;</code>包住的公式块，但有时最终在博客中公式以源码的方式呈现，无法显示想打出的公式。</p>
+<h3 id="解决方案"><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><h4 id="1-检查博客中主题配置文件是否将mathjax的选项打开"><a href="#1、检查博客中主题配置文件是否将mathjax的选项打开" class="headerlink" title="1、检查博客中主题配置文件是否将mathjax的选项打开"></a>1、检查博客中主题配置文件是否将mathjax的选项打开</h4><p>1、<code>锁定位置&quot;Hexo\themes\next\_config.yml&quot;</code></p>
+<p>进入配置文件后<code>Ctrl+F</code>然后搜索mathjax，将enable选项改为true。</p>
+<p><img src="/../img/4-1.png"></p>
+<p>2、然后在文章的<code>Front-matter</code>里打开<code>mathjax</code>。</p>
+<p><img src="/../img/4-2.png"></p>
+<h4 id="2-检查使用的markdown语言是否有错误"><a href="#2、检查使用的markdown语言是否有错误" class="headerlink" title="2、检查使用的markdown语言是否有错误"></a>2、检查使用的markdown语言是否有错误</h4><blockquote>
+<p>因为使用hexo搭建的博客，虽然上传时使用的是markdown语言，但是通常是通过读取md文件，然后在转化为HTML页面，最终呈现在网页上。</p>
+</blockquote>
+<p>所以需要注意一下问题：</p>
+<ul>
+<li><p>一些md语言与HTML语言有冲突的地方就不能使用。还有一些md编辑器会有一些特殊的语法，或是插件中的语法，最终也会导致显示不出来公式，比如语义冲突的符号还包括<code>*, &#123;, &#125;, \\</code>等</p>
+</li>
+<li><p>尽量避免直接使用符号来写公式，比如<code>~&quot;下标&quot;~</code>、<code>^&quot;上标&quot;^</code>。</p>
+</li>
+<li><p>还有要注意公式块中不能出现任何错误，包括每个符号的字母和括号等等。</p>
+</li>
+<li><p>md语言中是可以和HTML标签通用的，但是公式块中不能任何标签。</p>
+</li>
+</ul>
+<h4 id="3-更换hexo中的渲染引擎"><a href="#3、更换hexo中的渲染引擎" class="headerlink" title="3、更换hexo中的渲染引擎"></a>3、更换hexo中的渲染引擎</h4><blockquote>
+<p>如果上述情况没有问题，可以更换一下渲染引擎，Hexo 默认使用 hexo-renderer-marked 引擎渲染网页，该引擎会把一些特殊的 markdown 符号转换为相应的 html 标签。</p>
+</blockquote>
+<p>1、更换 Hexo 的 markdown 渲染引擎，hexo-renderer-kramed 引擎是在默认的渲染引擎 hexo-renderer-marked 的基础上修改了一些 bug ，两者比较接近，也比较轻量级。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure>
+
+<p>2、<code>锁定hexo\node_modules\kramed\lib\rules\inline.js</code></p>
+<p>把第11行的 escape 变量的值做相应的修改，这一步是在原基础上取消了对,{,}的转义：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br></pre></td></tr></table></figure>
+
+<p>第20行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure>
+
+<p>3重新启动hexo（先clean再generate）。</p>
+<h3 id="markdown常用公式符号"><a href="#markdown常用公式符号" class="headerlink" title="markdown常用公式符号"></a>markdown常用公式符号</h3><table>
+<thead>
+<tr>
+<th>形式</th>
+<th>实际效果</th>
+<th>语法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>上标</td>
+<td>$x^2$</td>
+<td>x^2</td>
+</tr>
+<tr>
+<td>下标</td>
+<td>$H_2O$</td>
+<td>H_2O</td>
+</tr>
+<tr>
+<td>平均值</td>
+<td>$\overline{a}$</td>
+<td>\overline{a}</td>
+</tr>
+<tr>
+<td>分式</td>
+<td>$\frac{1}{2}$</td>
+<td>\frac{1}{2}</td>
+</tr>
+<tr>
+<td>根式</td>
+<td>$\sqrt{2}$</td>
+<td>\sqrt{2}</td>
+</tr>
+<tr>
+<td>求和</td>
+<td>$\stackrel{n}{\sum_{i&#x3D;1}}i&#x3D;\frac{1}{2}(n+1)$</td>
+<td>\stackrel{n}{\sum_{i&#x3D;1}}i&#x3D;\frac{1}{2}(n+1)</td>
+</tr>
+<tr>
+<td>无穷</td>
+<td>$\infty$</td>
+<td>\infty</td>
+</tr>
+<tr>
+<td>箭头</td>
+<td>$\to$</td>
+<td>\to</td>
+</tr>
+<tr>
+<td>极限</td>
+<td>$\displaystyle \lim_{x \to \infty}{\frac{1}{x}}$</td>
+<td>\displaystyle \lim_{x \to \infty}{\frac{1}{x}}</td>
+</tr>
+<tr>
+<td>微积分</td>
+<td>$\int^{\infty}_{0}{xdx}$</td>
+<td>\int^{\infty}_{0}{xdx}</td>
+</tr>
+<tr>
+<td>向上取整</td>
+<td>$\lceil \frac{x}{2} \rceil$</td>
+<td>\lceil \frac{x}{2} \rceil</td>
+</tr>
+<tr>
+<td>向下取整</td>
+<td>$\lfloor x \rfloor$</td>
+<td>\lfloor x \rfloor</td>
+</tr>
+<tr>
+<td>对数函数</td>
+<td>$\log_2n$、$\ln e$、$\lg 10$</td>
+<td>\log_2n、\ln e、\lg 10</td>
+</tr>
+<tr>
+<td>大于等于</td>
+<td>$\geq$</td>
+<td>\geq</td>
+</tr>
+<tr>
+<td>小于等于</td>
+<td>$\leq$</td>
+<td>\leq</td>
+</tr>
+<tr>
+<td>不等于</td>
+<td>$\neq$</td>
+<td>\neq</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>经验总结</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客无法显示数学公式</title>
+    <url>/2023/02/21/4-hexo%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</url>
+    <content><![CDATA[<h3 id="问题"><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><p>写博客时会需要一些数学公式，也就是在markdown语言中用<code>&quot;$&quot;或&quot;$$&quot;</code>包住的公式块，但有时最终在博客中公式以源码的方式呈现，无法显示想打出的公式。</p>
+<span id="more"></span>
+
+<h3 id="解决方案"><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><h4 id="1-检查博客中主题配置文件是否将mathjax的选项打开"><a href="#1、检查博客中主题配置文件是否将mathjax的选项打开" class="headerlink" title="1、检查博客中主题配置文件是否将mathjax的选项打开"></a>1、检查博客中主题配置文件是否将mathjax的选项打开</h4><p>1、<code>锁定位置&quot;Hexo\themes\next\_config.yml&quot;</code></p>
+<p>进入配置文件后<code>Ctrl+F</code>然后搜索mathjax，将enable选项改为true。</p>
+<p><img src="/../img/4-1.png"></p>
+<p>2、然后在文章的<code>Front-matter</code>里打开<code>mathjax</code>。</p>
+<p><img src="/../img/4-2.png"></p>
+<h4 id="2-检查使用的markdown语言是否有错误"><a href="#2、检查使用的markdown语言是否有错误" class="headerlink" title="2、检查使用的markdown语言是否有错误"></a>2、检查使用的markdown语言是否有错误</h4><blockquote>
+<p>因为使用hexo搭建的博客，虽然上传时使用的是markdown语言，但是通常是通过读取md文件，然后在转化为HTML页面，最终呈现在网页上。</p>
+</blockquote>
+<p>所以需要注意一下问题：</p>
+<ul>
+<li><p>一些md语言与HTML语言有冲突的地方就不能使用。还有一些md编辑器会有一些特殊的语法，或是插件中的语法，最终也会导致显示不出来公式，比如语义冲突的符号还包括<code>*, &#123;, &#125;, \\</code>等</p>
+</li>
+<li><p>尽量避免直接使用符号来写公式，比如<code>~&quot;下标&quot;~</code>、<code>^&quot;上标&quot;^</code>。</p>
+</li>
+<li><p>还有要注意公式块中不能出现任何错误，包括每个符号的字母和括号等等。</p>
+</li>
+<li><p>md语言中是可以和HTML标签通用的，但是公式块中不能任何标签。</p>
+</li>
+</ul>
+<h4 id="3-更换hexo中的渲染引擎"><a href="#3、更换hexo中的渲染引擎" class="headerlink" title="3、更换hexo中的渲染引擎"></a>3、更换hexo中的渲染引擎</h4><blockquote>
+<p>如果上述情况没有问题，可以更换一下渲染引擎，Hexo 默认使用 hexo-renderer-marked 引擎渲染网页，该引擎会把一些特殊的 markdown 符号转换为相应的 html 标签。</p>
+</blockquote>
+<p>1、更换 Hexo 的 markdown 渲染引擎，hexo-renderer-kramed 引擎是在默认的渲染引擎 hexo-renderer-marked 的基础上修改了一些 bug ，两者比较接近，也比较轻量级。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure>
+
+<p>2、<code>锁定hexo\node_modules\kramed\lib\rules\inline.js</code></p>
+<p>把第11行的 escape 变量的值做相应的修改，这一步是在原基础上取消了对,{,}的转义：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br></pre></td></tr></table></figure>
+
+<p>第20行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure>
+
+<p>3重新启动hexo（先clean再generate）。</p>
+<h3 id="markdown常用公式符号"><a href="#markdown常用公式符号" class="headerlink" title="markdown常用公式符号"></a>markdown常用公式符号</h3><table>
+<thead>
+<tr>
+<th>形式</th>
+<th>实际效果</th>
+<th>语法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>上标</td>
+<td>$x^2$</td>
+<td>x^2</td>
+</tr>
+<tr>
+<td>下标</td>
+<td>$H_2O$</td>
+<td>H_2O</td>
+</tr>
+<tr>
+<td>平均值</td>
+<td>$\overline{a}$</td>
+<td>\overline{a}</td>
+</tr>
+<tr>
+<td>分式</td>
+<td>$\frac{1}{2}$</td>
+<td>\frac{1}{2}</td>
+</tr>
+<tr>
+<td>根式</td>
+<td>$\sqrt{2}$</td>
+<td>\sqrt{2}</td>
+</tr>
+<tr>
+<td>求和</td>
+<td>$\stackrel{n}{\sum_{i&#x3D;1}}i&#x3D;\frac{1}{2}(n+1)$</td>
+<td>\stackrel{n}{\sum_{i&#x3D;1}}i&#x3D;\frac{1}{2}(n+1)</td>
+</tr>
+<tr>
+<td>无穷</td>
+<td>$\infty$</td>
+<td>\infty</td>
+</tr>
+<tr>
+<td>箭头</td>
+<td>$\to$</td>
+<td>\to</td>
+</tr>
+<tr>
+<td>极限</td>
+<td>$\displaystyle \lim_{x \to \infty}{\frac{1}{x}}$</td>
+<td>\displaystyle \lim_{x \to \infty}{\frac{1}{x}}</td>
+</tr>
+<tr>
+<td>微积分</td>
+<td>$\int^{\infty}_{0}{xdx}$</td>
+<td>\int^{\infty}_{0}{xdx}</td>
+</tr>
+<tr>
+<td>向上取整</td>
+<td>$\lceil \frac{x}{2} \rceil$</td>
+<td>\lceil \frac{x}{2} \rceil</td>
+</tr>
+<tr>
+<td>向下取整</td>
+<td>$\lfloor x \rfloor$</td>
+<td>\lfloor x \rfloor</td>
+</tr>
+<tr>
+<td>对数函数</td>
+<td>$\log_2n$、$\ln e$、$\lg 10$</td>
+<td>\log_2n、\ln e、\lg 10</td>
+</tr>
+<tr>
+<td>大于等于</td>
+<td>$\geq$</td>
+<td>\geq</td>
+</tr>
+<tr>
+<td>小于等于</td>
+<td>$\leq$</td>
+<td>\leq</td>
+</tr>
+<tr>
+<td>不等于</td>
+<td>$\neq$</td>
+<td>\neq</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>经验总结</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>排序算法笔记</title>
+    <url>/2023/02/18/3-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="排序的基本概念"><a href="#排序的基本概念" class="headerlink" title="排序的基本概念"></a>排序的基本概念</h2><p>排序时将一组数据元素(或记录)从任意序列排列成一个按关键字有序的序列。而排序的目的往往是为了更高效的的进行查找，查找有序的序列可以大幅度的提升计算机对数据处理的工作效率。</p>
+<span id="more"></span>
+
+<p>在众多排序方法中，要衡量一个排序方法的优劣，通常要考虑3个方面：</p>
+<ul>
+<li><strong>时间效率</strong>–排序速度，通常用时间复杂度来表示，时间复杂度由算法执行中元素比较次数和移动次数而定。</li>
+<li><strong>空间效率</strong>–排序中占内存辅助空间的大小，通常用空间复杂度来表示。</li>
+<li><strong>稳定性</strong>–排序是否能保持原来的一些顺序关系，即若两个记录A和B的关键字值相等，但排序后A、B的先后次序宝石不变，则称这种算法是稳定的。</li>
+</ul>
+<h2 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h2><h3 id="排序思路"><a href="#排序思路：" class="headerlink" title="排序思路："></a>排序思路：</h3><ol>
+<li>把第一个记录看成是已经排好序的有序序列，这时有序序列中只有一个记录。</li>
+<li>从第二个记录起依次插入这个有序序列中，直到将第n个记录插入后整个序列变成有序序列。</li>
+</ol>
+<h3 id="排序过程"><a href="#排序过程：" class="headerlink" title="排序过程："></a>排序过程：</h3><p><img src="/../img/3-1.png"></p>
+<h3 id="实现代码"><a href="#实现代码：" class="headerlink" title="实现代码："></a>实现代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">insertSort</span><span class="params">(<span class="type">int</span> [] arr)</span>&#123;</span><br><span class="line">    <span class="comment">//遍历所有的数字</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i&lt;arr.length; i++)&#123;</span><br><span class="line">        <span class="comment">//如果当前数字比前一个数字小</span></span><br><span class="line">        <span class="keyword">if</span>(arr[i]&lt;arr[i-<span class="number">1</span>])&#123;</span><br><span class="line">            <span class="comment">//把当前遍历的数字存起来</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> arr[i];</span><br><span class="line">            <span class="type">int</span> j;</span><br><span class="line">            <span class="comment">//遍历当前数字去前面所有的数字</span></span><br><span class="line">            <span class="keyword">for</span>(j = i-<span class="number">1</span>; j&gt;=<span class="number">0</span> &amp;&amp; temp&lt;arr[j]; j--)&#123;</span><br><span class="line">                <span class="comment">//把前一个数字赋给后一个数字</span></span><br><span class="line">                arr[j+<span class="number">1</span>] = arr[j];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//把临时变量（外层for循环的当前元素）赋给不满足条件的后一个元素</span></span><br><span class="line">            arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h2><h3 id="排序思路"><a href="#排序思路：-1" class="headerlink" title="排序思路："></a>排序思路：</h3><ol>
+<li>按增量$d_1&#x3D;\frac{n}{2}$将原序列分成若干子序列，对每个序列进行直接插入序列</li>
+<li>子序列排好序后将增量按照$d_{i+1}&#x3D;\frac{d_i}{2}$递减，对每个按此增量构造的子序列进行直接插入排序，直至增量$d_k&#x3D;1$，则整个序列排好序。</li>
+</ol>
+<h3 id="排序过程"><a href="#排序过程：-1" class="headerlink" title="排序过程："></a>排序过程：</h3><p><img src="/../img/3-2.png"></p>
+<h3 id="实现代码"><a href="#实现代码：-1" class="headerlink" title="实现代码："></a>实现代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">shellSort</span><span class="params">(<span class="type">int</span>[] arr)</span>&#123;</span><br><span class="line">    <span class="comment">//遍历所有的步长</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">d</span> <span class="operator">=</span> arr.length/<span class="number">2</span>; d&gt;<span class="number">0</span>; d/=<span class="number">2</span>)&#123;</span><br><span class="line">        <span class="comment">//遍历所有元素</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> d; i&lt;arr.length; i++)&#123;</span><br><span class="line">            <span class="comment">//遍历本组中的所有元素</span></span><br><span class="line">           <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i-d; j&gt;=<span class="number">0</span>; j-=d)&#123;</span><br><span class="line">               <span class="comment">//如果当前元素大于加上步长后的那个元素</span></span><br><span class="line">               <span class="keyword">if</span>(arr[j]&gt;arr[j+d])&#123;</span><br><span class="line">                   <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> arr[j];</span><br><span class="line">                   arr[j] = arr[j+d];</span><br><span class="line">                   arr[j+d] = temp;</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><h3 id="排序思路"><a href="#排序思路：-2" class="headerlink" title="排序思路："></a>排序思路：</h3><ol>
+<li>第一趟用第一个元素，依次开始按照要求和后一个元素进行比较，若是不符合则交换位置，若是符合则则记录与它比较的元素，直到第n个元素。</li>
+<li>第二趟再用第一个元素按上述规则依次和后边元素进行比较，直到第n-1个元素。</li>
+<li>以此类推，在比较n-1趟后结束排序。</li>
+</ol>
+<h3 id="排序过程"><a href="#排序过程：-2" class="headerlink" title="排序过程："></a>排序过程：</h3><p><img src="/../img/3-3.png"></p>
+<h3 id="实现代码"><a href="#实现代码：-2" class="headerlink" title="实现代码："></a>实现代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">bubbleSort</span><span class="params">(<span class="type">int</span>[] arr)</span>&#123;</span><br><span class="line">    <span class="comment">//控制共比较多少轮</span></span><br><span class="line">    <span class="comment">//轮数是[].length-1 最后一个不需要比较</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i&lt;arr.length-<span class="number">1</span>; i++)&#123;</span><br><span class="line">        <span class="comment">//控制每轮比较多少次</span></span><br><span class="line">        <span class="comment">//次数是[].length-1-i 前边比较完的不需要再比较</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j&lt;arr.length-<span class="number">1</span>-i; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(arr[j]&gt;arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">                <span class="comment">//交换两个数据</span></span><br><span class="line">                <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> arr[j];</span><br><span class="line">                arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">                arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="快速排序"><a href="#快速排序：" class="headerlink" title="快速排序："></a>快速排序：</h2><h3 id="排序思路"><a href="#排序思路：-3" class="headerlink" title="排序思路："></a>排序思路：</h3><ol>
+<li>先将第一个设置为”基准值”，然后分别设置两个指针i和j指向序列起始位置关键字arr[low]和序列末尾位置关键字arr[high]。</li>
+<li>从j指向的位置向前扫描，找到第一个关键字值小于基准值的记录放入i位置。</li>
+<li>从i指向的位置向后扫描，找到第一个关键字值大于基准值的记录放入j位置。</li>
+<li>重复步骤2、步骤3，直至i&#x3D;j，将基准值放到i(或j)位置，并返回该位置。</li>
+<li>然后对基准数左右两部分分别重复以上操作。</li>
+<li>当每一组元素个数都为1时，排序结束</li>
+</ol>
+<h3 id="排序过程"><a href="#排序过程：-3" class="headerlink" title="排序过程："></a>排序过程：</h3><p><img src="/../img/3-4.png"></p>
+<p><img src="/../img/3-5.png"></p>
+<h3 id="实现代码"><a href="#实现代码" class="headerlink" title="实现代码"></a>实现代码</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">quickSort</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> start, <span class="type">int</span> end)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (start&lt;end)&#123;</span><br><span class="line">        <span class="comment">//把数组中的第1个数字作为标准数</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">standard</span> <span class="operator">=</span> arr[start];</span><br><span class="line">        <span class="comment">//记录需要排序的下标</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">low</span> <span class="operator">=</span> start;</span><br><span class="line">        <span class="type">int</span> <span class="variable">high</span> <span class="operator">=</span> end;</span><br><span class="line">        <span class="comment">//循环找比标准数大的数和比标准数小的数</span></span><br><span class="line">        <span class="keyword">while</span>(low&lt;high)&#123;</span><br><span class="line">            <span class="comment">//右边的数字比标准数大</span></span><br><span class="line">            <span class="keyword">while</span>(low&lt;high &amp;&amp; arr[high]&gt;=standard)&#123;</span><br><span class="line">                high--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//使用右边的数字替换左边的数</span></span><br><span class="line">            arr[low] = arr[high];</span><br><span class="line">            <span class="comment">//如果左边的数字比标准数小</span></span><br><span class="line">            <span class="keyword">while</span>(low&lt;high &amp;&amp; arr[low]&lt;=standard)&#123;</span><br><span class="line">                low++;</span><br><span class="line">            &#125;</span><br><span class="line">            arr[high] = arr[low];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//把标准数赋给low或是high所在的位置</span></span><br><span class="line">        arr[low] = standard;</span><br><span class="line">        <span class="comment">//处理所有比标准数小的数字</span></span><br><span class="line">        quickSort(arr,start,low-<span class="number">1</span>);</span><br><span class="line">        <span class="comment">//处理所有比标准数大的数字</span></span><br><span class="line">        quickSort(arr,low+<span class="number">1</span>,end);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="简单选择排序"><a href="#简单选择排序" class="headerlink" title="简单选择排序"></a>简单选择排序</h2><h3 id="排序思路"><a href="#排序思路：-4" class="headerlink" title="排序思路："></a>排序思路：</h3><ol>
+<li>第一趟，从第一个元素开始依次向后扫描，并按排序要求记录最符合的元素。</li>
+<li>并将最符合的元素与第一个元素交换位置。</li>
+<li>以此类推，第i趟，扫描出最符合要求的元素，并且与第i个位置的元素交换位置。</li>
+</ol>
+<h3 id="排序过程"><a href="#排序过程：-4" class="headerlink" title="排序过程："></a>排序过程：</h3><p><img src="/../img/3-6.png"></p>
+<h3 id="实现代码"><a href="#实现代码：-3" class="headerlink" title="实现代码："></a>实现代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">selectSort</span><span class="params">(<span class="type">int</span>[] arr)</span>&#123;</span><br><span class="line">    <span class="comment">//遍历所有的数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i&lt;arr.length; i++)&#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">minIndex</span> <span class="operator">=</span> i;</span><br><span class="line">        <span class="comment">//把当前遍历的数和后面所有的的数依次进行比较，并记录下最小的下标</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i+<span class="number">1</span>; j&lt;arr.length; j++)&#123;</span><br><span class="line">            <span class="comment">//如果后面比较的数比记录的最小的数小</span></span><br><span class="line">            <span class="keyword">if</span>(arr[minIndex]&gt;arr[j])&#123;</span><br><span class="line">                minIndex = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//如果最小的数和当前遍历数的下标不一致，说明下标为minIndex的数比当前遍历的数更小</span></span><br><span class="line">        <span class="keyword">if</span>(i != minIndex)&#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> arr[i];</span><br><span class="line">            arr[i] = arr[minIndex];</span><br><span class="line">            arr[minIndex] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><h3 id="排序思路"><a href="#排序思路：-5" class="headerlink" title="排序思路："></a>排序思路：</h3><ol>
+<li>第一趟，用最大的非叶子节点与其子节点进行比较，若不符合要求，则交换位置。</li>
+<li>然后依次再把上一个非叶子节点按上述规则操作，若某一非叶子节点与其子节点交换位置后，，子节点仍然为非叶子节点，则继续比较。</li>
+<li>重复步骤一和步骤二，直到完全二叉树变为最大堆或是最小堆。</li>
+<li>取出根节点，并把最后一个叶子节点放到根节点的位置。</li>
+<li>以此类推，直到所有节点均被取出，完成排序。</li>
+</ol>
+<h3 id="排序过程"><a href="#排序过程：-5" class="headerlink" title="排序过程："></a>排序过程：</h3><p><img src="/../img/3-7.png"></p>
+<h3 id="实现代码"><a href="#实现代码：-4" class="headerlink" title="实现代码："></a>实现代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">heapSort</span><span class="params">(<span class="type">int</span>[] arr)</span>&#123;</span><br><span class="line">        <span class="comment">//开始位置是最后一个非叶子节点，即最后一个节点的父节点</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">start</span> <span class="operator">=</span> (arr.length-<span class="number">1</span>)/<span class="number">2</span>;</span><br><span class="line">        <span class="comment">//调整为大顶堆</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> start; i&gt;=<span class="number">0</span>; i--)&#123;</span><br><span class="line">            maxHeap(arr, arr.length,i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//先把数组中的第0个和堆中的最后一个数交换位置，再把前面的处理为大顶堆</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> arr.length-<span class="number">1</span>; i&gt;<span class="number">0</span>; i--)&#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> arr[<span class="number">0</span>];</span><br><span class="line">            arr[<span class="number">0</span>] = arr[i];</span><br><span class="line">            arr[i] = temp;</span><br><span class="line">            maxHeap(arr, i, <span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">maxHeap</span><span class="params">(<span class="type">int</span>[] arr,<span class="type">int</span> size, <span class="type">int</span> index)</span>&#123;</span><br><span class="line">        <span class="comment">//左子节点</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">leftNode</span> <span class="operator">=</span> <span class="number">2</span>*index + <span class="number">1</span>;</span><br><span class="line">        <span class="comment">//右子节点</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">rightNode</span> <span class="operator">=</span> <span class="number">2</span>*index + <span class="number">2</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> index;</span><br><span class="line">        <span class="comment">//和两个字节点分别比对，找出最大的节点</span></span><br><span class="line">        <span class="keyword">if</span>(leftNode&lt;size &amp;&amp; arr[leftNode]&gt;arr[max])&#123;</span><br><span class="line">            max = leftNode;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(rightNode&lt;size &amp;&amp; arr[rightNode]&gt;arr[max])&#123;</span><br><span class="line">            max = rightNode;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//交换位置</span></span><br><span class="line">        <span class="keyword">if</span>(max != index)&#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> arr[index];</span><br><span class="line">            arr[index] = arr[max];</span><br><span class="line">            arr[max] = temp;</span><br><span class="line">            <span class="comment">//交换位置后，可能会破坏之前拍好的对，所以之前排好的堆需要重新调整</span></span><br><span class="line">            maxHeap(arr, size, max);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><h3 id="排序思路"><a href="#排序思路：-6" class="headerlink" title="排序思路："></a>排序思路：</h3><ol>
+<li>简单的将原始序列划分为两个子序列。</li>
+<li>分别对每个子序列归并排序。</li>
+<li>最后将排好序的两个子序列合并为一个有序序列</li>
+</ol>
+<h3 id="排序过程"><a href="#排序过程：-6" class="headerlink" title="排序过程："></a>排序过程：</h3><p><img src="/../img/3-8.png"></p>
+<h3 id="实现代码"><a href="#实现代码：-5" class="headerlink" title="实现代码："></a>实现代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">merge</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> low, <span class="type">int</span> middle, <span class="type">int</span> high)</span>&#123;</span><br><span class="line">    <span class="comment">//用于存储归并后的临时数组</span></span><br><span class="line">    <span class="type">int</span>[] temp = <span class="keyword">new</span> <span class="title class_">int</span>[high-low+<span class="number">1</span>];</span><br><span class="line">    <span class="comment">//记录第一个数组中需要遍历的下标</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> low;</span><br><span class="line">    <span class="comment">//记录第二个数组中需要遍历的下标</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> middle+<span class="number">1</span>;</span><br><span class="line">    <span class="comment">//用于记录在临时数组中存放的下标</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">index</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="comment">//遍历两个数组去除小的数字，放入临时数组中</span></span><br><span class="line">    <span class="keyword">while</span>(i&lt;=middle &amp;&amp; j&lt;=high)&#123;</span><br><span class="line">        <span class="comment">//第一个数组的数据更小</span></span><br><span class="line">        <span class="keyword">if</span>(arr[i] &lt;= arr[j])&#123;</span><br><span class="line">            <span class="comment">//把小的数据放入临时数组中</span></span><br><span class="line">            temp[index] = arr[i];</span><br><span class="line">            <span class="comment">//让下标向后移一位</span></span><br><span class="line">            i++;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            temp[index] = arr[j];</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        index++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//处理多余的数据</span></span><br><span class="line">    <span class="keyword">while</span>(j&lt;=high)&#123;</span><br><span class="line">        temp[index] = arr[j];</span><br><span class="line">        j++;</span><br><span class="line">        index++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> (i&lt;=middle)&#123;</span><br><span class="line">        temp[index] = arr[i];</span><br><span class="line">        i++;</span><br><span class="line">        index++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//把临时数组中的数据重新存入原数组</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">k</span> <span class="operator">=</span> <span class="number">0</span>; k&lt;temp.length; k++)&#123;</span><br><span class="line">        arr[k+low] = temp[k];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">mergeSort</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> low, <span class="type">int</span> high)</span>&#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">middle</span> <span class="operator">=</span> (high+low)/<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">if</span>(low&lt;high) &#123;</span><br><span class="line">        mergeSort(arr, low, middle);</span><br><span class="line">        mergeSort(arr, middle + <span class="number">1</span>, high);</span><br><span class="line">        merge(arr, low, middle, high);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h2><h3 id="排序思路"><a href="#排序思路：-7" class="headerlink" title="排序思路："></a>排序思路：</h3><ol>
+<li>先按每个元素的的个位进行桶式排序，将序列分到若干子序列并放入各桶中。</li>
+<li>将各个桶中的数据按照先进先出的规则收集到一起。</li>
+<li>重复前两个步骤，直到进行最大数字的位数次，完成排序。</li>
+</ol>
+<h3 id="排序过程"><a href="#排序过程：-7" class="headerlink" title="排序过程："></a>排序过程：</h3><p><img src="/../img/3-9.png"></p>
+<h3 id="实现代码"><a href="#实现代码：-6" class="headerlink" title="实现代码："></a>实现代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">radixSort</span><span class="params">(<span class="type">int</span>[] arr)</span>&#123;</span><br><span class="line">    <span class="comment">//存储数组中最大的数字</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> Integer.MIN_VALUE;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i&lt;arr.length; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[i]&gt;max)&#123;</span><br><span class="line">            max = arr[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//计算最大数字是几位数</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">maxlength</span> <span class="operator">=</span> (max +<span class="string">&quot;&quot;</span>).length();</span><br><span class="line">    <span class="comment">//用于临时存储数据的数组</span></span><br><span class="line">    <span class="type">int</span>[][] temp = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">10</span>][arr.length];</span><br><span class="line">    <span class="comment">//用于记录在temp中存放的数字的数量</span></span><br><span class="line">    <span class="type">int</span>[] count = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">10</span>];</span><br><span class="line">    <span class="comment">//根据最大长度的数决定比较的次数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>, n = <span class="number">1</span>; i&lt;maxlength; i++, n*=<span class="number">10</span>)&#123;</span><br><span class="line">        <span class="comment">//把每个数字分别计算余数</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j&lt;arr.length; j++)&#123;</span><br><span class="line">            <span class="comment">//计算余数</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">ys</span> <span class="operator">=</span> arr[j]/n%<span class="number">10</span>;</span><br><span class="line">            <span class="comment">//把当前遍历的数据放入指定的数组中</span></span><br><span class="line">            temp[ys][count[ys]] = arr[j];</span><br><span class="line">            <span class="comment">//记录数量</span></span><br><span class="line">            count[ys]++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//记录取的元素需要的位置</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">index</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="comment">//把数字取出来</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">k</span> <span class="operator">=</span> <span class="number">0</span>; k&lt;count.length; k++)&#123;</span><br><span class="line">            <span class="comment">//记录数量的数组中当前余数记录的数量不为零</span></span><br><span class="line">            <span class="keyword">if</span>(count[k]!=<span class="number">0</span>)&#123;</span><br><span class="line">                <span class="comment">//循环取出元素</span></span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">0</span>; l&lt;count[k]; l++)&#123;</span><br><span class="line">                    <span class="comment">//取出元素</span></span><br><span class="line">                    arr[index] = temp[k][l];</span><br><span class="line">                    <span class="comment">//记录下一个位置</span></span><br><span class="line">                    index++;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">//把数量置零</span></span><br><span class="line">                count[k] = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
   </entry>
 </search>

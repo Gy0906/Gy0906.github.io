@@ -23,7 +23,7 @@
     <meta name="description" content="一、绪论随着应用程序变得越来越复杂和数据越来越丰富，几百万、几十亿甚至几百亿的数据就会出现，而对这么大对数据进行搜索、插入或者排序等的操作就越来越慢，数据结构就是用来解决这些问题的。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构笔记">
-<meta property="og:url" content="http://gy0906.github.io/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="http://gy0906.github.io/2023/02/08/2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="gy0906.blog">
 <meta property="og:description" content="一、绪论随着应用程序变得越来越复杂和数据越来越丰富，几百万、几十亿甚至几百亿的数据就会出现，而对这么大对数据进行搜索、插入或者排序等的操作就越来越慢，数据结构就是用来解决这些问题的。">
 <meta property="og:locale" content="zh_CN">
@@ -31,18 +31,18 @@
 <meta property="og:image" content="http://gy0906.github.io/img/2-2.png">
 <meta property="og:image" content="http://gy0906.github.io/img/2-3.png">
 <meta property="article:published_time" content="2023-02-08T13:27:25.000Z">
-<meta property="article:modified_time" content="2023-02-18T09:15:39.184Z">
+<meta property="article:modified_time" content="2023-02-21T10:20:03.244Z">
 <meta property="article:author" content="回幼儿园当学霸">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://gy0906.github.io/img/2-1.png">
 
 
-<link rel="canonical" href="http://gy0906.github.io/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/">
+<link rel="canonical" href="http://gy0906.github.io/2023/02/08/2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://gy0906.github.io/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/","path":"2023/02/08/数据结构笔记/","title":"数据结构笔记"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://gy0906.github.io/2023/02/08/2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/","path":"2023/02/08/2-数据结构笔记/","title":"数据结构笔记"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>数据结构笔记 | gy0906.blog</title>
@@ -162,18 +162,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -220,7 +220,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2023/02/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="http://gy0906.github.io/2023/02/08/2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/lufei.jpg">
@@ -256,7 +256,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-02-18 17:15:39" itemprop="dateModified" datetime="2023-02-18T17:15:39+08:00">2023-02-18</time>
+      <time title="修改时间：2023-02-21 18:20:03" itemprop="dateModified" datetime="2023-02-21T18:20:03+08:00">2023-02-21</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -310,7 +310,7 @@
 </blockquote>
 <h3 id="3抽象数据类型"><a href="#3-抽象数据类型" class="headerlink" title="(3)抽象数据类型"></a>(3)抽象数据类型</h3><p>抽象数据类型(<em>Abstract Data Type, ADT</em>)是指一个数学模型以及定义在该模型上的一组操作。抽象数据类型的定义取决与他的一组逻辑特性，而与其在计算机内部如何表示和实现无关，即<strong>不论其内部结构如何改变，只要他的数学特性不变，都不影响其外部的使用</strong>。其可用三元组来表示：</p>
 <blockquote>
-<p>ADT&#x3D;(D,S,P)<br>其中D是数据对象；S是D上的关系集；P是D上的操作集。</p>
+<p>ADT&#x3D;(D,S,P)<br>其中<strong>D是数据对象；S是D上的关系集；P是D上的操作集</strong>。</p>
 </blockquote>
 <h2 id="3-算法的概念和性能分析"><a href="#3、算法的概念和性能分析" class="headerlink" title="3、算法的概念和性能分析"></a>3、算法的概念和性能分析</h2><h3 id="1算法的定义"><a href="#1-算法的定义" class="headerlink" title="(1)算法的定义"></a>(1)算法的定义</h3><p>算法(<em>Algorithm</em>)是对特定问题求解步骤的一种表述，是指令的有序序列。其中每一条指令表示一个或多个操作。<br>一个算法有以下特性： </p>
 <ul>
@@ -348,7 +348,7 @@
 <blockquote>
 <p>所以第i个元素的位置可以<strong>通过<em>LOC(a_i)&#x3D;LOC(a_0)+i*L</em>来计算</strong>，其中<em>L</em>表示每个元素所占用的存储单元。<br>当顺序表中存储容量不够时，解决数据一处的方法就是申请一个更大容量的数组并进行数组元素的复制。</p>
 </blockquote>
-<h3 id="2顺序表类的设计与实现"><a href="#2-顺序表类的设计与实现" class="headerlink" title="(2)顺序表类的设计与实现"></a>(2)顺序表类的设计与实现</h3><h4 id="查找元素"><a href="#查找元素" class="headerlink" title="查找元素"></a>查找元素</h4><p>在顺序表中查找是否存在与待查元素相同的数据元素<br>现有线性表(23,75,41,38,54,62)，存储长度为7的一维数组空间中，现查找元素38。<br><img src="/../img/2-3.png" alt="avatar"></p>
+<h3 id="2顺序表类的设计与实现"><a href="#2-顺序表类的设计与实现" class="headerlink" title="(2)顺序表类的设计与实现"></a>(2)顺序表类的设计与实现</h3><h4 id="查找元素"><a href="#查找元素" class="headerlink" title="查找元素"></a>查找元素</h4><p>在顺序表中查找是否存在与待查元素相_同的_数据元素<br>现有线性表(23,75,41,38,54,62)，存储长度为7的一维数组空间中，现查找元素38。<br><img src="/../img/2-3.png" alt="avatar"></p>
 <p>思路：将待查元素和春旭表中元素进行一一比较，如找到相同元素则返回该元素的位置，查找成功；如未找到相同的元素则返回-1，查找不成功。</p>
 <p>实现代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">indexof</span><span class="params">(T key)</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="built_in">this</span>.len; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="keyword">if</span> (key.equals(<span class="built_in">this</span>.value[i])) &#123;</span><br><span class="line">            <span class="keyword">return</span> a-<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        a++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -369,13 +369,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/12/31/HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" rel="prev" title="HTML入门笔记">
+                <a href="/2022/12/31/1-HTML%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" rel="prev" title="HTML入门笔记">
                   <i class="fa fa-chevron-left"></i> HTML入门笔记
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/02/18/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0--%E6%9F%A5%E6%89%BE%E4%B8%8E%E6%8E%92%E5%BA%8F/" rel="next" title="算法笔记--查找与排序">
-                  算法笔记--查找与排序 <i class="fa fa-chevron-right"></i>
+                <a href="/2023/02/18/3-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="next" title="排序算法笔记">
+                  排序算法笔记 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -445,6 +445,12 @@
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 
